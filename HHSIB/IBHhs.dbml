@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HHSDatabase" Class="IBHhsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=LAPTOP-JV26AM6B\SQLSERVER2016;Initial Catalog=HHSDatabase;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="HHSIB" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.HomeroomIB" Member="HomeroomIBs">
+    <Type Name="HomeroomIB">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="HomeroomIB_StudentIB" Member="StudentIBs" ThisKey="ID" OtherKey="HomeroomId" Type="StudentIB" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CalendarIB" Member="CalendarIBs">
+    <Type Name="CalendarIB">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IBEVent" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IBDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IB_Student" Member="IB_Students">
+    <Type Name="IB_Student">
+      <Column Name="StudentNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NChar(15)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(24)" CanBeNull="true" />
+      <Column Name="Phone1" Type="System.String" DbType="NVarChar(24)" CanBeNull="true" />
+      <Column Name="Phone2" Type="System.String" DbType="NVarChar(24)" CanBeNull="true" />
+      <Column Name="Homeroom" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ClassOF" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Parents" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ParentEmail1" Type="System.String" DbType="NVarChar(24) NOT NULL" CanBeNull="false" />
+      <Column Name="ParentEmail2" Type="System.String" DbType="NVarChar(24)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IB_Homeroom" Member="IB_Homerooms">
+    <Type Name="IB_Homeroom">
+      <Column Name="HomeroomId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StudentIB" Member="StudentIBs">
+    <Type Name="StudentIB">
+      <Column Name="StudentNo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NChar(15)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(24)" CanBeNull="true" />
+      <Column Name="Phone1" Type="System.String" DbType="NVarChar(24)" CanBeNull="true" />
+      <Column Name="Phone2" Type="System.String" DbType="NVarChar(24)" CanBeNull="true" />
+      <Column Name="HomeroomId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ClassOf" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Parents" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ParentEmail1" Type="System.String" DbType="NVarChar(24)" CanBeNull="true" />
+      <Column Name="ParentEmail2" Type="System.String" DbType="NVarChar(24)" CanBeNull="true" />
+      <Column Name="Homeroom" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="HomeroomIB_StudentIB" Member="HomeroomIB" ThisKey="HomeroomId" OtherKey="ID" Type="HomeroomIB" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IB_Calendars" Member="IB_Calendars">
+    <Type Name="IB_Calendar">
+      <Column Name="IBEVent" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IBDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.DeleteCalendar" Method="DeleteCalendar">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

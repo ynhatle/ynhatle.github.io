@@ -1,0 +1,35 @@
+&button1Heading=IB&
+
+&button1Description=International Baccalaureate Website&
+
+
+
+&button2Heading=HHS&
+
+&button2Description=Hillsborough High School Website&
+
+
+
+&button3Heading=SDHC&
+
+&button3Description=School District of Hillsborough County Website&
+
+
+
+&button1URL=http://www.ibo.org/&
+
+&button2URL=http://hillsborough.mysdhc.org/&
+
+&button3URL=http://www.sdhc.k12.fl.us/&
+
+
+
+&button1Target=&
+
+&button2Target=&
+
+&button3Target=&
+
+
+
+&infoLoaded=done&

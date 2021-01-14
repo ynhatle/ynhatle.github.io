@@ -1,0 +1,460 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- #BeginTemplate "Templates/fullscreen.dwt" --><!-- DW6 -->
+
+<head>
+<!-- #BeginEditable "meta" -->
+<title>Travel</title>
+<meta name="language" content="en-US" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Links to Style Sheets Begin-->
+<link href="styles/fullscreen.css" rel="stylesheet" type="text/css" />
+<link href="styles/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="styles/menu.css" rel="stylesheet" type="text/css" />
+<link href="styles/fonts.css" rel="stylesheet" type="text/css" />
+<!-- Links to Style Sheets End-->
+<style type="text/css">
+.icon {color:Blue; text-decoration:underline;font-size:9px}
+.body1_green {color:Green; text-align:center; font-weight:bold;}
+.body1_red {color:Red; text-align:center; font-weight:bold}
+.body1_link {color:Blue; text-align:center; font-weight:bold; text-decoration:underline}
+
+</style>
+<!-- Links to Javascript files Begin-->
+<script type="text/javascript" src="javascript/swfobject.js"></script>
+<script type="text/javascript" src="javascript/special_functions.js" ></script>
+<script type="text/javascript" src="javascript/faq.js" ></script>
+<script type="text/javascript" src="javascript/menu.js"></script>
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="../javascript/faq.js"></script>
+<![endif]-->
+<!-- Links to Javascript files End-->
+
+<!-- #BeginEditable "flash_variables" -->
+<script type="text/javascript">
+    // if this page is in:
+    //   the root folder, then set this variable to ./
+    //   a sub folder one level deep, then set this variable to ../
+    //   a sub folder two levels deep, then set this variable to ../../
+    var rootFlashLocation = "./";
+    var music_on = 1; // 0 = off, 1 = on
+    var clock24hour = 1; // 0 = 12 hour clock, 1 = 24 hour clock
+    var maxIntroViews = -1; // -1 = always display, 0 = never display, and any other positive integer = the number of times to display the intro sequence
+    var isPersistantCookie = 0; // 0 =  no, 1 = yes -- persistant means it will save even after the user closes their browser
+</script>
+<!-- #EndEditable -->
+
+</head>
+
+<body>
+
+<!--main-->
+	<div id="main">
+	
+<!--top-->
+	<div class="top">
+		<div class="top_r">
+			<div class="top_l">
+			
+<!--header-->
+	<div class="header">
+	
+	<!--flash header-->
+	<div id="template_flash" style="left: 133px; top: 100px">
+		<div id="flashcode"></div></div>
+		<script type="text/javascript">
+		    var so = new SWFObject(rootFlashLocation + "flash/flash-images/template-images.swf", "flashcode", "200", "100", "6");
+		    so.addParam("wmode", "transparent");
+		    so.addParam("base", rootFlashLocation);
+		    so.addVariable("music_on", music_on);
+		    so.addVariable("clock24hour", clock24hour);
+		    so.write("flashcode");
+		</script>
+		
+<!--page title-->
+	<div id="page_title" style="left: 225px; top: 5px">
+		<!-- #BeginEditable "page_title" --><h1>Travel Tours</h1><!-- #EndEditable --></div>
+
+<!--icons-->
+	<div id="icons" style="left: 140px; top: 247px; position:absolute"><!-- #BeginLibraryItem "/Library/icons.lbi" --><table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+<img src="graphics/home.png" width="20" height="20" alt="home" /><a href="index.htm">Home</a>
+<img src="graphics/contact.png" width="20" height="20" alt="contact" /><a href="contact.htm">Contact</a>
+<!--img src="graphics/sitemap.png" width="20" height="20" alt="sitemap" /><a href="sitemap.htm">Search</a--></td>
+	</tr>
+</table><!-- #EndLibraryItem --></div>
+    <div id="search" style="left: 400px; top: 245px" class="body1"><h1>Travel Tours</h1></div>
+
+<!--top button-->
+	<div id="top_buttons_w"  style="right:185px; top: 207px; position:absolute">
+	
+	<!-- #BeginLibraryItem "/Library/top_buttons.lbi" -->
+	<div class="chromestyle" id="chromemenu">
+        <ul>         
+        <li><a href="class_news.htm">News</a></li>       
+        <li><a href="" rel="dropmenu1">Class News</a></li>
+        <li><a href="college_lab.htm">College Lab</a></li>
+        <li><a href="" rel="dropmenu3">IB Office</a></li> 
+        <li><a href="" rel="dropmenu5">Calendar</a></li>        
+        <li><a href="" rel="dropmenu4">CAS Info</a></li>
+        </ul>
+    </div>
+    
+    
+    <!--1st drop down menu -->                                                   
+    <div id="dropmenu1" class="dropmenudiv" style="width: 90px";>    
+    <a href="class_news_2009.htm">2009</a>
+    <a href="class_news_2010.htm">2010</a>
+    <a href="class_news_2011.htm">2011</a>
+    <a href="class_news_2012.htm">2012</a>
+    <a href="class_news_2013.htm">2013</a>
+    </div>
+
+    
+
+
+    <!--3rd drop down menu -->                                                   
+    <div id="dropmenu3" class="dropmenudiv" style="width: 100px;">
+    <a href="Coordinator.htm">Coordinator</a>
+    <a href="Counselor.htm">Counselor</a>
+    </div>
+    
+    <!--4th drop down menu -->                                                
+    <div id="dropmenu4" class="dropmenudiv" style="width: 105px;">
+    <a href="CAS.htm#0">CAS Document</a>
+    <a href="CAS.htm#1">What is CAS ?</a>
+    <a href="CAS.htm#2">CAS Guidelines</a>
+    <a href="CAS.htm#3">Nature of CAS</a>
+    <a href="CAS.htm#4">Questions</a>
+    <a href="CAS.htm#5">Organization</a>
+    <a href="CAS.htm#6">Examples</a>
+    </div>
+    
+    <!--5th drop down menu -->                                                
+    <div id="dropmenu5" class="dropmenudiv" style="width: 80px;">
+    <a href="ibCalendar.aspx">HHS IB</a>
+    <a href="http://hillsborough.mysdhc.org/18F676FF-00757E5A?object=/hillsborough_calendar&templates=RWD&ConfPosition=0&Calendar=1&infobar=no">HHS</a>
+    <a href="http://www.sdhc.k12.fl.us/info/calendars/">District</a>    
+    </div>
+
+    <script type="text/javascript">
+
+        cssdropdown.startchrome("chromemenu")
+    </script>
+    <!-- #EndLibraryItem -->
+    </div>
+<!-- end top button -->
+<!--logo-->
+	<div id="logo" style="left: 275px; top: 20px"><!-- #BeginLibraryItem "/Library/logo.lbi" -->
+	<div>
+        <img src="logo/logo.png" width="400" height="94" alt="logo" />
+    </div><!-- #EndLibraryItem -->
+    </div>
+<!--end logo -->
+
+	</div>
+	</div>
+	</div>
+	</div>	
+	
+<!--center-->
+	<div class="center">
+	<div class="c2">
+	<div class="c6">
+	<div class="c4">
+	<div class="c8">
+	<div class="c5">
+	<div class="c7">
+	<div class="c3">
+	<div class="c1">
+	
+<!--content tables-->
+	<table class="content">
+		<tr><td scope="col" class="c_l">&nbsp;</td>
+			<td scope="col" class="c_menu">
+
+	        <!-- #BeginEditable "body2" -->		
+    <div class="body2">
+    
+    <!--themed image-->
+	<div id="themed_image">
+		<div id="themed_image2"><!-- #BeginLibraryItem "/Library/themed_image.lbi" -->
+		<img border="0" src="flash/themed-image/themed-image.png" width="160" height="100" alt="themed image" /><!-- #EndLibraryItem --></div>
+	</div>
+
+    
+	<!--copy for left menu goes here-->
+
+    <!--menu--><!-- #BeginLibraryItem "/Library/vertical_menu.lbi" --> 
+    <div class="Vertical_Menu">
+	    <ul class="myVerticalMenu">
+	        <li><a href="ib_alliance_news.htm">IB Alliance News</a></li>
+	        <li><a href="fundraising.htm">Fundraising & Shop</a></li>		  
+	        <li><a href="sports_clubs.htm">Sports & Clubs</a></li>	           	        	        		
+		    <li><a href="faculty.htm">Faculty & Staff</a></li>
+		    <li><a href="departments.htm">Departments</a></li>
+		    <li><a href="travel.htm">Travel Tours</a></li>
+		    <li><a href="about_us.htm">About IB</a></li>
+            <li><a href="ib_alliance.htm">About IB Alliance</a></li>	
+		    <li><a href="Application.htm">About IB Application</a></li>	
+		    <li><a href="forms.htm">Forms & Links</a></li>		                
+            <li><a href="event_pics.htm">Events & Pictures</a></li>	
+            <li><a href="UserLogin.aspx?PARM=ParentPage">Parent Menu</a></li>
+            <li><a href="UserLogin.aspx?PARM=AdminPage">Admin Menu</a></li>	
+            <li><a href="https://www.edline.net/pages/hills">EDLine</a></li>>			
+	    </ul>
+    </div><!-- #EndLibraryItem -->
+
+<!--menu end--><br />
+			
+<!-- #EndEditable --></div>
+
+	</td><td scope="col" class="c_c">&nbsp;</td>
+	<td scope="col" class="body1">
+	
+	
+<!--body-->		
+	<table width="100%" border="0" cellpadding="5px 0x 5px 5px" class="body_heading">
+       <tr>
+           <td><h4>NOTE: These trips are organized by teachers and not sponsored by or affiliated with Hillsborough High School or Hillsborough County Public Schools. 
+               </h4></td>
+        </tr> 
+    </table>
+
+<!-- #BeginEditable "body1" -->  
+    <h1>2009 Tour </h1> 
+    <table width="100%">
+	    <tr>
+	        <td><img src="graphics/ajax_wait.gif" alt="" />  <span style="color:purple; font-family:Comic Sans MS;text-decoration:underline; font-size:larger" onclick="showHideDiv(20091);">Summer 2009 Tour: European Showcase</span>&nbsp;&nbsp;&nbsp;
+	        <!--<span style="background-color:yellow; font-family:Arial;font-weight:bold;">==> update 06-06-09</span>-->
+	        <br />June 17 - July 6, 2009, led by Mr. Shelburne
+	        </td>     
+	    </tr>
+	</table>
+	<div id="Div20091" style="display:none">  
+    <table width="100%" border="0" cellpadding="5px 5px 5px 5px">
+        <tr><td>
+        <a id="Tour2009"></a>
+        <br />
+        <h1 style='text-align: center;' ><strong><em><span style='color: green;' >2009 Tour</em></strong> </span></h1>
+        <h3></h3>
+        <p style='text-align: center;' ><img src= "images/CruiseShipSapphire.jpg" style='border:0px;' alt='' /> 
+        </p>
+        <h5 style='text-align: center;' ><span style='color: blue;' ><strong><em>A spectacular 3-day cruise of the Grecian Isles tops off our 2009 European tour!</em></strong> </span></h5>
+
+        <h4 style='text-align: center;' ><strong><em><span style='color: green;' >(England, France, Switzerland, Italy, Greece, &amp; Turkey)</em></strong> </span></h4>
+        <h4 style='text-align: center;' ><strong><em><span style='color: red;' >TOUR #531211-G1</span></em></strong> </h4>
+        <h4 style='text-align: center;' ><strong><em><span style='color: purple;' >June 17 - July 6, 2009</span></em></strong> 
+        </h4>
+        <h3 style='text-align: center;' ><strong><em><span style='color: green;' >
+        Only a few days and we’re off for a 20-day tour of EUROPE! 
+        <br />Remember to follow the Departure Procedures Handout distributed at our FINAL meeting, May 26.  Wednesday, June 17.  
+        Watch your arrival time carefully.  It’s ALWAYS GOOD TO BE EARLY!  But, it’s better NEVER, than late.  
+        Please, please, please – BE EARLY!  I will be reminding you right up until the Day of Departure.  
+        <br />How’s your packing coming?  Remember – 40 lbs. is the limit for your 45 inch. (in total measurements – packed) large carry-on bag.  
+        <br /><br />If you have any questions or concerns, or if you just need some advice, either e-mail or call me.   
+        Otherwise, I will see you ALL at TIA on June 17!   
+        <br /><br /><span style="color:red">THE BIG RED GOES TO EUROPE! "HILLSBO – YOU KNOW!"</span>
+        
+        <br />Monsieur Shelburne, Leading European tours since 1987 (22 years ago)
+        </span></em></strong> </h3>
+        
+        </td>
+        </tr>
+        <tr>
+           <td style="background:url(graphics/news_bg.jpg) repeat-x;"></td>
+        </tr>
+    </table> 
+    </div> 
+    <br /><br />
+
+
+    <h1>2010 Tours</h1> 
+    
+	<table width="100%">
+	    <tr>
+	        <td><img src="graphics/ajax_wait.gif" alt=""/>  <span style="color:Purple; font-family:Comic Sans MS; text-decoration:underline; font-size:larger" onclick="showHideDiv(20101);">Summer 2010 Tour: Paris &amp; Mediterranean Europe </span>
+	        <br />June 15 - June 30, 2010, led by Mr. Shelburne, Mrs. Gonzalez and Mr. Mobley
+	        </td>     
+	    </tr>
+	</table>
+    <div id="Div20101" style="display:none">  
+    <table width="100%" border="0" cellpadding="5px 5px 5px 5px">
+        <tr><td>    
+            
+            <br />
+            <h2 style='text-align: center;' ><strong><em>Summer 2010 Tour: Paris &amp; Mediterranean Europe (16 days)</em></strong> </h2>
+            
+            <!--h2 style='text-align: center;' ><strong><em><span style='color: green;' >European Travel 2010 Tour</span></strong></em></h2!-->
+            <p style='text-align: center;'><span style='color: blue;'>For Rising Juniors &amp; Rising Seniors</span></p>
+            <p style='text-align: center;'><span style='color: blue;'>Students from other schools welcome!</span>
+            <br /> Lead Teacher:  Monsieur Shelburne
+            <br /> Additional Sponsors:  Señora Yamile Gonzalez, & Mr. Mobley
+            <br />
+            <br />Enrollment as of June 5, 2009:  27 student participants & 3 sponsors - 
+            <br />GO BIG <span style='color: red;' >RED!</span>
+        
+            <h3 style='text-align: center;' ><strong><em><span style='color: green;' >Tentative Dates:  Tuesday, June 15, to Wednesday, June 30, 2010.  What an exciting 16 days we are going to have!</span></em></strong> </h3>
+            <h3 style='text-align: center;' ><strong><em><span style='color: red;' >Enroll by the end of May and lock in the 2009 prices!  And, don't forget, there's still the possibility of winning a free tour from EF.  You don't want to miss out!  Come on in and join the growing excitement for this incredible European adventure!  </span><span style='color: green;' >And, yes, you CAN earn up to 30 CAS hours on this tour!</em></strong> </span></h3>
+            <h2 style='text-align: center;' >Tour #702937<em></em> </h2>
+            <h3 style='text-align: center;' ><strong><em><span style='color: green;' >YES!  Monsieur Shelburne WILL be leading a 2010 summer tour.  It is a 16-day tour called "Paris &amp; Mediterranean Europe."  SO MANY have expressed great interest in this tour!  In 2010 Monsieur Shelburne will celebrate 23 years since he began leading tours!  Coming enjoy one of the largest classrooms in the world, Europe, as you spend 6 days in France, 2 days in Spain, and 6 days in Italy.  With 2 travel days, that's a 16-day tour!  The trip includes an extension to Sorrento and the romantic and exciting Isle of Capri.  This is an extremely popular and relaxing tour which also includes the FRENCH RIVIERA!  It's MAGNIFIQUE!  Get enrolled today by Monday, April 6, and save an extra $100!</em></strong> </span></h3>
+            <h4 style='text-align: center;' ><a href='http://student-travel.eftours.com/MyTeachersTour/teachers-tour.aspx?salestour=702937' rel='nofollow'>Paris &amp; Mediterranean Europe <span style='color: red;' >ENROLL NOW</a> </span></h4>
+            <h4 style='text-align: center;' ><a href='https://www.eftours.com/eLiterature/DBD/F/PMX.pdf' rel='nofollow'>Paris &amp; Mediterranean Europe Brochure</a> </h4>
+            <h4 style='text-align: center;' ><a href='http://www.eftours.com/ForTeachers/PriceTours/PrintQuote.aspx?QuoteType=GL' rel='nofollow'>Paris &amp; Mediterranean Europe Price Quote</a> </h4>
+           
+        
+        </td>
+        </tr>
+        <tr>
+           <td style="background:url(graphics/news_bg.jpg) repeat-x;"></td>
+        </tr>
+    </table>
+    </div>
+    
+    <br /><br />
+    
+    <h1>2011 Tours</h1> 
+    
+	<table width="100%">
+	    <tr>
+	        <td><img src="graphics/ajax_wait.gif" alt=""/>  <span style="color:Purple; font-family:Comic Sans MS; text-decoration:underline; font-size:larger" onclick="showHideDiv(20111);">Summer 2011 Tour: Paris &amp; Mediterranean Europe </span>
+	        <br />June 14 - June 29, 2011, led by Mr. Shelburne
+	        </td>     
+	    </tr>
+	</table>	
+         
+    <div id="Div20111" style="display:none">  
+    <table width="100%" border="0" cellpadding="5px 5px 5px 5px">
+        <tr><td>    
+            
+            <br />
+            <h3 style='text-align: center;' >            
+            The tour tentatively scheduled for the summer of 2011 is 
+            <br /><span class="body1_green">PAIRS & MEDITERRANEAN EUROPE</span>.  
+            <br />The tour # is <span class="body1_green">802342</span>.  
+            <br />The tentative dates for the tour are June 14th thru June 29th, 2011. 
+            <br />All present freshmen (rising Sophomores) will able to enroll on the tour right away with that tour number.  
+            <br />Click on the link below to see the price quote.  
+            <!--If for some reason the link doesn't work, see the  included the complete URL. -->
+            If the students enroll now, they should be able to lock in these prices for the 2011 tour.  
+            That's a potential savings of $100s of dollars.  
+            <br /><a href="http://www.eftours.com/ForTeachers/PriceTours/PrintQuote.aspx?Quote_id=785112&Code=aba82bdfd6ba46ee&QuoteType=TC"><span class="body1_link">Paris and Mediterranean Europe Price Quote</span></a>
+            <br />If you have any questions, just call EF Tours Customer Service @ 1-800-665-5364. </h3>
+            
+            <h2 style='text-align: center;' ><strong><em>Summer 2011 Tour: Paris &amp; Mediterranean Europe (16 days)</em></strong> </h2>
+            
+            <p style='text-align: center;'><span style='color: blue;'>For the graduating classes of 2011 & 2012</span></p>
+            <p style='text-align: center;'><span style='color: blue;'>Students from other schools welcome!</span></p>
+            <br />
+            <h3 style='text-align: center;' ><strong><em><span style='color: green;' >Tentative Dates: June 14 thru June 29, 2011. What an exciting 16 days we are going to have!</span></em></strong> </h3>
+            <h3 style='text-align: center;' ><strong><em><span style='color: red;' >Enroll RIGHT AWAY and lock in the 2010 prices! And, there's still the possibility of winning a free tour from EF. You don't want to miss out! Come on in and catch the European fever!
+            </span><span style='color: green;' >ALL PARTICIPANTS CAN earn up to 30 CAS hours on this tour! </em></strong> </span></h3>
+            <h2 style='text-align: center;' >Tour #802342<em></em> </h2>
+            <h3 style='text-align: center;' ><span style='color: green;'>            
+            YES! Due to STUDENT DEMAND, Monsieur Shelburne has already organized a 2011 summer tour. It is one of the most popular tours he has led in his 23 years of leading tours -- the 16-day tour called 
+"Paris & Mediterranean Europe." SO MANY have expressed great interest in this tour already! In 2011 Monsieur Shelburne will celebrate 23 years since he began leading tours! Coming enjoy one of the largest classrooms in the world, Europe, as you spend 6 days in France, 2 days in Spain, and 6 days in Italy. With 2 travel days, that's a 16-day tour! The trip includes an extension to Sorrento and the romantic and exciting Isle of Capri. This is an extremely popular and relaxing tour which also includes the FRENCH RIVIERA! It's MAGNIFIQUE! Get enrolled right away and save $100s of dollars!
+                        
+        
+        </td>
+        </tr>
+        <tr>
+           <td style="background:url(graphics/news_bg.jpg) repeat-x;"></td>
+        </tr>
+    </table>
+    </div>
+	<br /><br />
+    
+    <h1>Travel Tours Pictures</h1>
+	<table width="100%">
+	    <tr>
+	        <td><img src="graphics/ajax_wait.gif" alt="" />
+	        <a href="EuroTravelGallery/default.htm"><span style="color:purple; font-family:Comic Sans MS;text-decoration:underline; font-size:larger">Mr. Shelburne European Tours Pictures</span></a>
+	               
+	        </td>     
+	    </tr>
+	</table>
+    
+    
+    <br /><br /><br />
+            
+	<!--body1 end-->	
+	
+<!-- #EndEditable --></td>
+	<td scope="col" class="c_r">&nbsp;</td>
+	</tr>
+	</table>
+
+<!--end content-->
+
+</div></div></div></div></div></div></div></div></div>
+
+
+<!--bottom-->
+
+<!--footer-->
+<div class="bottom">
+	<div class="bottom_r">
+		<div class="bottom_l">
+		
+		<div class="body3">	<!-- #BeginEditable "body3" -->
+		
+		<div class="footer">
+			
+				<div class="footer_l">
+				
+<!--Start favorites-->
+	<div id="favorites" style="left: 259px; top: 7px"><!-- #BeginLibraryItem "/Library/favorites.lbi" --><div class="favorites_button">
+<a href="javascript:bookmark()">
+<img src="graphics/favorites.png" class="favorites_button" alt="bookmark" width="70" height="80" /></a>
+</div><!-- #EndLibraryItem --></div>
+		
+<!--Start contact-->
+	<div id="contact" style="left: 174px; top: 7px"><!-- #BeginLibraryItem "/Library/contact.lbi" --><a href="mailto:hhsibwebmaster@gmail.com?subject=Message from website">
+<img src="graphics/contact_us.png" class="contact_button" alt="contact us" width="70" height="80" /></a><!-- #EndLibraryItem --></div>
+
+				</div>
+				
+				<div class="footer_r">
+				
+<!--Start site_info-->
+			<div id="site_info"><!-- #BeginLibraryItem "/Library/site_info.lbi" --><table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+Copyright © 2008. IB Alliance, Inc. All Rights Reserved. 
+</td>
+	</tr>
+</table><!-- #EndLibraryItem --></div>
+
+				</div>
+				
+			</div>
+		
+		<!-- #EndEditable --></div>
+			
+		</div>
+	</div>
+</div>
+			
+
+
+<!--main end--></div>
+
+</body>
+<script type="text/javascript">
+
+    function showHideDiv(divNum) {
+        divName = 'Div' + divNum;
+        if (document.getElementById(divName) != null) {
+            if (document.getElementById(divName).style.display == "none")
+                document.getElementById(divName).style.display = '';
+            else
+                document.getElementById(divName).style.display = "none";
+
+        }
+    } 
+
+
+</script>
+<!-- #EndTemplate --></html>
+

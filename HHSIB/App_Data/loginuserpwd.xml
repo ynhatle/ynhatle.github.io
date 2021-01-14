@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Users>
+  <User userId="admin1" password="hhsadmin1" role="Admin" />   
+  <User userId="user1" password="hhsuser1" role="Member" />     
+</Users>
+
+	

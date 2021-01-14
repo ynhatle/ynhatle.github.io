@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.75" name="IBHhs">
+  <DataContextMoniker Name="/IBHhsDataContext" />
+  <nestedChildShapes>
+    <classShape Id="753d595f-ae91-40d1-a7e7-df575940ae41" absoluteBounds="2.625, 0.625, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/IBHhsDataContext/HomeroomIB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d11de7d1-4874-4d4d-a334-1b0488248321" absoluteBounds="2.6400000000000006, 1.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cb980163-0e26-42b5-aafd-e6fd2913bb9a" absoluteBounds="0.5, 2, 2, 1.3862939453125">
+      <DataClassMoniker Name="/IBHhsDataContext/CalendarIB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="25efdc3b-fa39-4cc4-9c15-20e9a7f9f5a1" absoluteBounds="0.51499999999999968, 2.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="37425885-7f2e-4104-96c9-9af146542bef" absoluteBounds="1.25, 7, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/IBHhsDataContext/IB_Student" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7eb66be4-c1f4-49cb-b647-ce9c8d430c1f" absoluteBounds="1.2650000000000001, 7.46, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="55a43f75-c994-4ee6-ac73-0560c5def1ce" absoluteBounds="1.5, 5.125, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/IBHhsDataContext/IB_Homeroom" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf183032-12af-49f5-88cb-f2b63cae19e0" absoluteBounds="1.5149999999999997, 5.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1aedcfa1-2eeb-4e6e-bc68-b9b4c62e7037" absoluteBounds="4, 3.125, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/IBHhsDataContext/StudentIB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c4013e4c-88fe-4619-af5c-dc3084b5f4de" absoluteBounds="4.015, 3.585, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.3125 : 1.81899251302083); (4.3125 : 3.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/IBHhsDataContext/HomeroomIB/HomeroomIB_StudentIB" />
+      <nodes>
+        <classShapeMoniker Id="753d595f-ae91-40d1-a7e7-df575940ae41" />
+        <classShapeMoniker Id="1aedcfa1-2eeb-4e6e-bc68-b9b4c62e7037" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f4dd6f9e-1163-498d-932b-5966f56962f3" absoluteBounds="0.875, 3.625, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/IBHhsDataContext/IB_Calendar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29645135-f607-41cd-844e-bd9a278b482d" absoluteBounds="0.89000000000000012, 4.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

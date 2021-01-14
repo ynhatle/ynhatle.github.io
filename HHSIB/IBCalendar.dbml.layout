@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="IBCalendar">
+  <DataContextMoniker Name="/IBCalendarDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c6b784ed-5b39-485f-963d-b7e608bdd839" absoluteBounds="3.25, 1.25, 2, 1.0961531575520831">
+      <DataClassMoniker Name="/IBCalendarDataContext/IB_Calendar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="814257fa-131e-458b-bfb5-45b030fe4952" absoluteBounds="3.265, 1.71, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

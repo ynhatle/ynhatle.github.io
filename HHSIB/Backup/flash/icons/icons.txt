@@ -1,0 +1,24 @@
+&icon1URL=welcome.htm&
+
+&icon2URL=sitemap.htm&
+
+&icon3URL=about_us.htm&
+
+
+
+&icon1Text=IB Site&
+
+&icon2Text=HHS&
+
+&icon3Text=School District&
+
+&icon4Text=Quick Links&
+
+
+
+&icon1Target=&
+
+&icon2Target=&
+
+&icon3Target=&
+

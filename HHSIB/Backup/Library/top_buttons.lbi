@@ -1,0 +1,47 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><div class="chromestyle" id="chromemenu">
+<ul>
+<li><a href="../index.htm">Home</a></li>
+<li><a href="" rel="dropmenu1">Class</a></li>
+<li><a href="" rel="dropmenu2">CAS</a></li>
+<li><a href="" rel="dropmenu3">Faculty</a></li>
+<li><a href="" rel="dropmenu4">Contact Us</a></li>		
+</ul>
+</div>
+
+<!--1st drop down menu -->                                                   
+<div id="dropmenu1" class="dropmenudiv" style="width: 100px;">
+<a href="../class_news_2009.htm">2009</a>
+<a href="../class_news_2010.htm">2010</a>
+<a href="../class_news_2011.htm">2011</a>
+<a href="../class_news_2012.htm">2012</a>
+</div>
+
+
+<!--2nd drop down menu -->                                                
+<div id="dropmenu2" class="dropmenudiv" style="width: 100px;">
+<a href="../CAS.htm#1">WHAT IS CAS</a>
+<a href="../CAS.htm#2">CAS GUIDELINES</a>
+<a href="../CAS.htm#3">NATURE OF CAS</a>
+<a href="../CAS.htm#4">QUESTIONS</a>
+<a href="../CAS.htm#5">ORGANIZATIONS</a>
+<a href="../CAS.htm#6">EXAMPLES</a>
+</div>
+
+<!--3rd drop down menu -->                                                   
+<div id="dropmenu3" class="dropmenudiv" style="width: 100px;">
+<a href="../faculty.htm#faculty">FACULTY</a>
+<a href="../faculty.htm#staff">STAFF</a>
+</div>
+
+<!--4th drop down menu -->                                                   
+<div id="dropmenu4" class="dropmenudiv" style="width: 100px;">
+<a href="../contact.htm#1">EMAIL</a>
+<a href="../contact.htm#2">ONLINE FORM</a>
+</div>
+
+
+
+<script type="text/javascript">
+
+cssdropdown.startchrome("chromemenu")
+</script>

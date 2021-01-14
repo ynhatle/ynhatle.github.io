@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<!-- #BeginEditable "meta" -->
+<title>Contact Us</title>
+<meta name="Keywords" content="place your keywords here" />
+<meta name="Description" content="place a description for your webpage here" />
+<!-- #EndEditable -->
+
+<meta name="language" content="en-US" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Links to Style Sheets Begin-->
+<link href="../styles/index.css" rel="stylesheet" type="text/css" />
+<link href="../styles/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="../styles/fonts.css" rel="stylesheet" type="text/css" />
+<link href="../styles/menu.css" rel="stylesheet" type="text/css" />
+
+<!-- Links to Style Sheets End-->
+
+<!-- Links to Javascript files Begin-->
+<script type="text/javascript" src="../javascript/swfobject.js"></script>
+<script type="text/javascript" src="../javascript/special_functions.js"></script>
+<script type="text/javascript" src="../javascript/intro_functions.js"></script>
+<script type="text/javascript" src="../javascript/faq.js"></script>
+<script type="text/javascript" src="../javascript/menu.js"></script>
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="../javascript/faq.js"></script>
+<![endif]-->
+<!-- Links to Javascript files End-->
+
+<!-- #BeginEditable "flash_variables" -->
+<script type="text/javascript">
+// if this page is in:
+//   the root folder, then set this variable to ./
+//   a sub folder one level deep, then set this variable to ../
+//   a sub folder two levels deep, then set this variable to ../../
+var rootFlashLocation = "../";
+var music_on           = 1; // 0 = off, 1 = on
+var clock24hour        = 1; // 0 = 12 hour clock, 1 = 24 hour clock
+var maxIntroViews      = -1; // -1 = always display, 0 = never display, and any other positive integer = the number of times to display the intro sequence
+var isPersistantCookie = 0; // 0 =  no, 1 = yes -- persistant means it will save even after the user closes their browser
+</script>
+<!-- #EndEditable -->
+
+</head>
+
+<body>
+
+<!--main-->
+	<div id="main">
+	
+		<div style="position: absolute; width: 1px; height: 1px; z-index: 2" id="myFlashLayer">
+	<div id="intro-loader"></div></div>
+		<script type="text/javascript">
+		<!--
+  		var myCookie = getCookie();
+  		if (myCookie < maxIntroViews || maxIntroViews == -1) {
+    	// only set a cookie if there is a "max allowable views" value set
+    	if (maxIntroViews > 0) {
+      	setCookie(myCookie, isPersistantCookie);
+    	}
+
+    	// code to load intro sequence
+   		var so = new SWFObject(rootFlashLocation + "flash/intro.swf", "myFlashLayer", "656", "420", "6");
+   		so.addParam("base", rootFlashLocation);
+   		so.addParam("scale", "exactfit");
+   		so.addParam("wmode", "transparent");
+   		so.write("intro-loader");
+  		}
+  		//-->
+		</script>
+	
+<!--header-->
+	<div id="header">
+	
+<!--flash header-->
+	<div style="position:absolute;"><div id="flashcode"></div></div>
+		<script type="text/javascript"> 
+		var so = new SWFObject(rootFlashLocation + "flash/header.swf", "flashcode", "656", "390", "6");
+		so.addParam("wmode", "transparent");
+		so.addParam("base", rootFlashLocation);
+		so.addVariable("music_on", music_on);
+		so.addVariable("clock24hour", clock24hour);
+		so.write("flashcode");
+		</script>
+		
+<!--page title-->
+	<div id="page_title" style="left: 222px; top: 395px">
+		<!-- #BeginEditable "page_title" --><h1>Page Title </h1><!-- #EndEditable --></div>
+
+<!--icons-->
+	<div id="icons" style="left: 18px; top: 392px; position:absolute; height:25px"><!-- #BeginLibraryItem "/Library/icons.lbi" --><table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+<img src="../graphics/home.png" width="20" height="20" alt="home" /><a href="../index.htm">Home</a>
+<img src="../graphics/contact.png" width="20" height="20" alt="contact" /><a href="../contact.htm">Contact</a>
+<img src="../graphics/sitemap.png" width="20" height="20" alt="sitemap" /><a href="../sitemap.htm">Search</a></td>
+	</tr>
+</table><!-- #EndLibraryItem --></div>
+		
+<!--top button-->
+	<div id="top_buttons_w"  style="right: 48px; top: 351px; position:absolute"><!-- #BeginLibraryItem "/Library/top_buttons.lbi" --><div class="chromestyle" id="chromemenu">
+<ul>
+<li><a href="../index.htm">Home</a></li>
+<li><a href="" rel="dropmenu1">Class</a></li>
+<li><a href="" rel="dropmenu2">CAS</a></li>
+<li><a href="" rel="dropmenu3">Faculty</a></li>
+<li><a href="" rel="dropmenu4">Contact Us</a></li>		
+</ul>
+</div>
+
+<!--1st drop down menu -->                                                   
+<div id="dropmenu1" class="dropmenudiv" style="width: 100px;">
+<a href="../class_news_2009.htm">2009</a>
+<a href="../class_news_2010.htm">2010</a>
+<a href="../class_news_2011.htm">2011</a>
+<a href="../class_news_2012.htm">2012</a>
+</div>
+
+
+<!--2nd drop down menu -->                                                
+<div id="dropmenu2" class="dropmenudiv" style="width: 100px;">
+<a href="../CAS.htm#1">WHAT IS CAS</a>
+<a href="../CAS.htm#2">CAS GUIDELINES</a>
+<a href="../CAS.htm#3">NATURE OF CAS</a>
+<a href="../CAS.htm#4">QUESTIONS</a>
+<a href="../CAS.htm#5">ORGANIZATIONS</a>
+<a href="../CAS.htm#6">EXAMPLES</a>
+</div>
+
+<!--3rd drop down menu -->                                                   
+<div id="dropmenu3" class="dropmenudiv" style="width: 100px;">
+<a href="../faculty.htm#faculty">FACULTY</a>
+<a href="../faculty.htm#staff">STAFF</a>
+</div>
+
+<!--4th drop down menu -->                                                   
+<div id="dropmenu4" class="dropmenudiv" style="width: 100px;">
+<a href="../contact.htm#1">EMAIL</a>
+<a href="../contact.htm#2">ONLINE FORM</a>
+</div>
+
+
+
+<script type="text/javascript">
+
+cssdropdown.startchrome("chromemenu")
+</script>
+<!-- #EndLibraryItem --></div>
+
+		
+<!--logo-->
+	<div id="logo" style="left: 55px; top: 0px; position:absolute"><!-- #BeginLibraryItem "/Library/logo.lbi" --><div>
+<img src="../logo/logo.png" width="400" height="94" alt="logo" />
+</div><!-- #EndLibraryItem --></div>
+<!--flash intro--></div>
+<!--content-->
+	<div id="content">
+		<div class="content">
+			
+<!--content tables-->
+	<table class="content">
+		<tr>
+			<td scope="col" class="c_l"></td>
+			<td scope="col" class="c_menu">
+			
+<!-- #BeginEditable "body2" -->
+
+<!--menu top-->
+		<div class="menu_heading">Navigate</div>
+		
+<!--themed image-->
+	<div id="themed_image">
+		<div id="themed_image2">
+
+            <!-- #BeginLibraryItem "/Library/themed_image.lbi" --><img border="0" src="../flash/themed-image/themed-image.png" width="160" height="100" alt="themed image" /><!-- #EndLibraryItem -->
+</div>
+	</div>
+			
+	<!--copy for left menu goes here-->
+
+<!--menu--><!-- #BeginLibraryItem "/Library/vertical_menu.lbi" --> <div class="Vertical_Menu">
+	<ul class="myVerticalMenu">
+		<li><a href="../index.htm">Home</a></li>
+		<li><a href="../class_news.htm">Class News</a></li>
+		<li><a href="../about_us.htm">About IB</a></li>
+        <li><a href="../ib_alliance.htm">IB Alliance</a></li>
+		<li><a href="../faculty.htm">Faculty & Staff</a></li>
+        <li><a href="../guidance.htm">Guidance</a></li>
+		<li><a href="../sports_clubs.htm">Sports & Clubs</a></li>
+		<li><a href="../CAS.htm">CAS</a></li>
+		<li><a href="http://www.hhsib.org/pmwiki/pmwiki?n=Main.Applications">Application</a></li>
+	  <li><a href="../departments.htm">Departments</a></li>
+		<li><a href="http://www.hhsib.org/pmwiki/pmwiki?n=Main.LinksPage">Links</a></li>
+
+	</ul>
+
+
+ </div><!-- #EndLibraryItem -->&nbsp;
+	
+<!--info--><!-- #BeginLibraryItem "/Library/info_box.lbi" -->	<div class="info">
+		<h1>Information Box</h1>
+		<p>Put your special info images, banner adds or what ever you need to 
+		draw attention to in this area.</p>
+	</div><!-- #EndLibraryItem --><p>&nbsp;</p>
+	
+<!--menu end--><br />
+			
+<!-- #EndEditable -->	
+		
+		</td><td scope="col" class="c_c">&nbsp;</td>
+		<td scope="col" class="body1">
+		
+<!--body-->		
+		
+<p><!-- #BeginEditable "body1" -->
+
+TThis is the editable body region. This text will be replaced with the text and content on the attached pages.
+	
+<!-- #EndEditable --></p>
+			</td><td scope="col" class="c_r">&nbsp;</td>
+		</tr>
+	</table></div></div>
+	
+<!--end content-->
+
+<!--footer-->
+	<div id="footer">
+<!-- #BeginEditable "body3" -->
+<!--footer left-->
+		<div class="footer_l">
+<!--Start favorites-->
+			<div id="favorites" style="left: 138px; top: 62px"><!-- #BeginLibraryItem "/Library/favorites.lbi" --><div class="favorites_button">
+<a href="javascript:bookmark()">
+<img src="../graphics/favorites.png" class="favorites_button" alt="bookmark" width="70" height="80" /></a>
+</div><!-- #EndLibraryItem --></div>
+<!--Start contact-->
+			<div id="contact" style="left: 54px; top: 62px"><!-- #BeginLibraryItem "/Library/contact.lbi" --><a href="mailto:youremail@youraddress.com?subject=Message from website">
+<img src="../graphics/contact_us.png" class="contact_button" alt="contact us" width="70" height="80" /></a><!-- #EndLibraryItem --></div>
+		</div>
+		
+<!--footer right-->
+		<div class="footer_r">
+
+<!--Start site_info-->
+			<div id="site_info"><!-- #BeginLibraryItem "/Library/site_info.lbi" --><table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+Copyright © 2008. IB Alliance, Inc. All Rights Reserved. 
+</td>
+	</tr>
+</table><!-- #EndLibraryItem --></div>
+			
+		</div>	
+
+<!--bottom_links-->
+			
+		<div id="bottom_links"><!-- #BeginLibraryItem "/Library/bottom_links.lbi" --><a href="../index.htm">Home</a> | 
+<a href="../catalog.htm">Products</a> | 
+<a href="../services.htm">Services</a> | 
+<a href="../faqs.htm">FAQs</a> | 
+<a href="../contact.htm">Contact</a> | 
+<a href="../about_us.htm">About</a> | 
+<a href="../privacy.htm">Privacy</a> | 
+<a href="../sitemap.htm">Sitemap</a><!-- #EndLibraryItem --></div>
+	<!-- #EndEditable --></div>
+
+<!--end footer-->
+
+</div>
+
+<!--end main-->
+</body>
+
+</html>

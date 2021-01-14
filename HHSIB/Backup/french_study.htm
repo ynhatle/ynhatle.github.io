@@ -1,0 +1,357 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- #BeginTemplate "Templates/fullscreen.dwt" --><!-- DW6 -->
+
+<head>
+<!-- #BeginEditable "meta" -->
+<title>Departments</title>
+<meta name="language" content="en-US" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Links to Style Sheets Begin-->
+<link href="styles/fullscreen.css" rel="stylesheet" type="text/css" />
+<link href="styles/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="styles/menu.css" rel="stylesheet" type="text/css" />
+<link href="styles/fonts.css" rel="stylesheet" type="text/css" />
+<!-- Links to Style Sheets End-->
+
+<!-- Links to Javascript files Begin-->
+<script type="text/javascript" src="javascript/swfobject.js"></script>
+<script type="text/javascript" src="javascript/special_functions.js" ></script>
+<script type="text/javascript" src="javascript/faq.js" ></script>
+<script type="text/javascript" src="javascript/menu.js"></script>
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="../javascript/faq.js"></script>
+<![endif]-->
+<!-- Links to Javascript files End-->
+
+<!-- #BeginEditable "flash_variables" -->
+<script type="text/javascript">
+    // if this page is in:
+    //   the root folder, then set this variable to ./
+    //   a sub folder one level deep, then set this variable to ../
+    //   a sub folder two levels deep, then set this variable to ../../
+    var rootFlashLocation = "./";
+    var music_on = 1; // 0 = off, 1 = on
+    var clock24hour = 1; // 0 = 12 hour clock, 1 = 24 hour clock
+    var maxIntroViews = -1; // -1 = always display, 0 = never display, and any other positive integer = the number of times to display the intro sequence
+    var isPersistantCookie = 0; // 0 =  no, 1 = yes -- persistant means it will save even after the user closes their browser
+</script>
+<!-- #EndEditable -->
+
+</head>
+
+<body>
+
+<!--main-->
+	<div id="main">
+	
+<!--top-->
+	<div class="top">
+		<div class="top_r">
+			<div class="top_l">
+			
+<!--header-->
+	<div class="header">
+	
+	<!--flash header-->
+	<div id="template_flash" style="left: 133px; top: 100px">
+		<div id="flashcode"></div></div>
+		<script type="text/javascript">
+		    var so = new SWFObject(rootFlashLocation + "flash/flash-images/template-images.swf", "flashcode", "200", "100", "6");
+		    so.addParam("wmode", "transparent");
+		    so.addParam("base", rootFlashLocation);
+		    so.addVariable("music_on", music_on);
+		    so.addVariable("clock24hour", clock24hour);
+		    so.write("flashcode");
+		</script>
+		
+<!--page title-->
+	<div id="page_title" style="left: 225px; top: 5px">
+		<!-- #BeginEditable "page_title" --><h1>French Studies</h1><!-- #EndEditable --></div>
+
+<!--icons-->
+	<div id="icons" style="left: 140px; top: 247px; position:absolute"><!-- #BeginLibraryItem "/Library/icons.lbi" --><table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+<img src="graphics/home.png" width="20" height="20" alt="home" /><a href="index.htm">Home</a>
+<img src="graphics/contact.png" width="20" height="20" alt="contact" /><a href="contact.htm">Contact</a>
+<!--img src="graphics/sitemap.png" width="20" height="20" alt="sitemap" /><a href="sitemap.htm">Search</a--></td>
+	</tr>
+</table><!-- #EndLibraryItem --></div>
+    <div id="search" style="left: 400px; top: 245px" class="body1"><h1>French Studies</h1></div>
+
+<!--top button-->
+	<div id="top_buttons_w"  style="right:185px; top: 207px; position:absolute">
+	
+	<!-- #BeginLibraryItem "/Library/top_buttons.lbi" -->
+	<div class="chromestyle" id="chromemenu">
+        <ul>         
+        <li><a href="class_news.htm">News</a></li>       
+        <li><a href="" rel="dropmenu1">Class News</a></li>
+        <li><a href="college_lab.htm">College Lab</a></li>
+        <li><a href="" rel="dropmenu3">IB Office</a></li> 
+        <li><a href="" rel="dropmenu5">Calendar</a></li>        
+        <li><a href="" rel="dropmenu4">CAS Info</a></li>
+        </ul>
+    </div>
+    
+    
+    <!--1st drop down menu -->                                                   
+    <div id="dropmenu1" class="dropmenudiv" style="width: 90px";>    
+    <a href="class_news_2009.htm">2009</a>
+    <a href="class_news_2010.htm">2010</a>
+    <a href="class_news_2011.htm">2011</a>
+    <a href="class_news_2012.htm">2012</a>
+    <a href="class_news_2013.htm">2013</a>
+    </div>
+
+    
+
+
+    <!--3rd drop down menu -->                                                   
+    <div id="dropmenu3" class="dropmenudiv" style="width: 100px;">
+    <a href="Coordinator.htm">Coordinator</a>
+    <a href="Counselor.htm">Counselor</a>
+    </div>
+    
+    <!--4th drop down menu -->                                                
+    <div id="dropmenu4" class="dropmenudiv" style="width: 105px;">
+    <a href="CAS.htm#0">CAS Document</a>
+    <a href="CAS.htm#1">What is CAS ?</a>
+    <a href="CAS.htm#2">CAS Guidelines</a>
+    <a href="CAS.htm#3">Nature of CAS</a>
+    <a href="CAS.htm#4">Questions</a>
+    <a href="CAS.htm#5">Organization</a>
+    <a href="CAS.htm#6">Examples</a>
+    </div>
+    
+    <!--5th drop down menu -->                                                
+    <div id="dropmenu5" class="dropmenudiv" style="width: 80px;">
+    <a href="ibCalendar.aspx">HHS IB</a>
+    <a href="http://hillsborough.mysdhc.org/18F676FF-00757E5A?object=/hillsborough_calendar&templates=RWD&ConfPosition=0&Calendar=1&infobar=no">HHS</a>
+    <a href="http://www.sdhc.k12.fl.us/info/calendars/">District</a>    
+    </div>
+
+    <script type="text/javascript">
+
+        cssdropdown.startchrome("chromemenu")
+    </script>
+    <!-- #EndLibraryItem -->
+    </div>
+<!-- end top button -->
+<!--logo-->
+	<div id="logo" style="left: 275px; top: 20px"><!-- #BeginLibraryItem "/Library/logo.lbi" -->
+	<div>
+        <img src="logo/logo.png" width="400" height="94" alt="logo" />
+    </div><!-- #EndLibraryItem -->
+    </div>
+<!--end logo -->
+
+	</div>
+	</div>
+	</div>
+	</div>	
+	
+<!--center-->
+	<div class="center">
+	<div class="c2">
+	<div class="c6">
+	<div class="c4">
+	<div class="c8">
+	<div class="c5">
+	<div class="c7">
+	<div class="c3">
+	<div class="c1">
+	
+<!--content tables-->
+	<table class="content">
+		<tr><td scope="col" class="c_l">&nbsp;</td>
+			<td scope="col" class="c_menu">
+
+	        <!-- #BeginEditable "body2" -->		
+    <div class="body2">
+    
+    <!--themed image-->
+	<div id="themed_image">
+		<div id="themed_image2"><!-- #BeginLibraryItem "/Library/themed_image.lbi" -->
+		<img border="0" src="flash/themed-image/themed-image.png" width="160" height="100" alt="themed image" /><!-- #EndLibraryItem --></div>
+	</div>
+
+    
+	<!--copy for left menu goes here-->
+
+    <!--menu--><!-- #BeginLibraryItem "/Library/vertical_menu.lbi" --> 
+    <div class="Vertical_Menu">
+	    <ul class="myVerticalMenu">
+	        <li><a href="ib_alliance_news.htm">IB Alliance News</a></li>
+	        <li><a href="fundraising.htm">Fundraising & Shop</a></li>		  
+	        <li><a href="sports_clubs.htm">Sports & Clubs</a></li>	           	        	        		
+		    <li><a href="faculty.htm">Faculty & Staff</a></li>
+		    <li><a href="departments.htm">Departments</a></li>
+		    <li><a href="travel.htm">Travel Tours</a></li>
+		    <li><a href="about_us.htm">About IB</a></li>
+            <li><a href="ib_alliance.htm">About IB Alliance</a></li>	
+		    <li><a href="Application.htm">About IB Application</a></li>	
+		    <li><a href="forms.htm">Forms & Links</a></li>		                
+            <li><a href="event_pics.htm">Events & Pictures</a></li>	
+            <li><a href="UserLogin.aspx?PARM=ParentPage">Parent Menu</a></li>	
+            <li><a href="UserLogin.aspx?PARM=AdminPage">Admin Menu</a></li>	
+            <li><a href="https://www.edline.net/pages/hills">EDLine</a></li>		
+	    </ul>
+    </div><!-- #EndLibraryItem -->
+
+
+<!--menu end--><br />
+			
+<!-- #EndEditable --></div>
+
+	</td><td scope="col" class="c_c">&nbsp;</td>
+	<td scope="col" class="body1">
+	
+	
+<!--body-->		
+		
+
+<!-- #BeginEditable "body1" -->  
+    <br />
+    <table width="100%" border="0" cellpadding="5px 5px 5px 5px" class="body_heading">
+        <tr>
+            <td>  
+            <div id="French">
+                <p style='text-align: center;' ><img src="images/Bonjour.gif" style='border:0px;' alt='' /> 
+                </p>
+                <h2 style='text-align: center;' ><span style='color: blue;' >French Studies</span></h2>
+                <p style='text-align: center;' ><img src=  "images/SimpleFrenchFlag.jpg" style='border:0px;' alt='' /> 
+                </p>
+                <h3 style='text-align: center;' >Hillsborough High School</h3>
+                <h3 style='text-align: center;' >International Baccalaureate Program</h3>
+                <p style='text-align: center;' ><img src= "images/France1.jpg" style='border:0px;' alt='' /> 
+                </p>
+                <p style='text-align: center;' ><em>Monsieur Shelburne and his youngest son, Andrew, atop the Eiffel Tower in Paris in June of 2005 on the England, France, &amp; Spain tour</em>
+                </p>
+                <h3 style='text-align: center;' ><a  href='http://teacherweb.com/FL/HillsboroughIB/MonsieurShelburne/h6.stm' rel='nofollow'>Monsieur Shelburne's IB French Website</a> </h3>
+                                
+                <h3 style='text-align: center;' ><a href="#french1" onclick="showhidediv(1);">Pre-IB French I</a> </h3>
+                <div id="french1" style="display:none">
+                    <h2>Pre-IB French I</h2>
+                    <h5>Year Course: Grade 9</h5>
+                    <h5>Students will learn structures and vocabulary, while developing proficiency in the four skills of listening, speaking, reading, and writing. This is accomplished by creating a contemporary French-speaking cultural context, so as to make language-learning a more meaningful activity. Class work emphasizes listening and speaking skills, and homework emphasizes reading and writing.</h5>                                                           
+                </div>                
+                <h3 style='text-align: center;' ><a href="#french2" onclick="showhidediv(2);">Pre-IB French II</a> </h3>
+                <div id='french2' style="display:none">
+                    <h2>Pre-IB French II</h2>
+                    <h5>Year Course: Grade 10</h5>
+                    <h5>During the course, the students continue to develop and appropriate the language. They come to realize that the meanings of various linguistic elements can be found by observation and analysis and can be rebuilt like a puzzle. The student's active behavior is encouraged through the development of oral expression during class. Through various materials (texts, tapes, and videos) students are also introduced to French life and culture.</h5>
+                    </div>
+                <h3 style='text-align: center;' ><a href="#french3" onclick="showhidediv(3);">IB French III</a> </h3>
+                <div id='french3' style="display:none">
+                    <h2>IB French III</h2>
+                    <h5>Year Course: Grade 11</h5>
+                    <p>The course begins to focus on IB requirements. Students are required to read selections from several texts from different sources (newspapers, magazines, websites, novels, short stories), understand the texts globally and in detail, and study their vocabulary and the grammatical structures in order to be prepared for the IB paper 1. Students improve their writing skills and learn to write essays in the IB format. They are exposed to an extensive selection of possible essay topics and therefore get ample practice for the paper 2. For oral skills, students are expected to work everyday in the form of discussions, presentations, debates, and conversations which will lead to the evaluation required for the internal assessment and to a recorded interactive presentation sent to the IBO.
+                    </p>
+                    </div>
+                
+                <h3 style='text-align: center;'><a href="#french4" onclick="showhidediv(4);">IB French IV</a> </h3>
+                <div id='french4' style="display:none">  
+                    <h2>IB French IV</h2>                  
+                    <h5>Year Course: Grade 12</h5>
+                    <p>The course focuses mainly on IB requirements. Students are required to read several texts from different sources (newspapers, magazines, websites, novels, short stories), understand the texts globally and in detail, study their vocabulary and the grammatical structures in order to be prepared for the IB paper 1. Students improve their writing skills and learn to write essays in the IB format. They are exposed to an extensive selection of possible essay topics and therefore get ample practice for the paper 2. For oral skills, students are expected to work everyday in the form of discussions, presentations, debates which will lead to the evaluation required for the internal assessment and to a recorded interactive presentation sent to the IBO.
+                    </p>
+                    </div>
+                                     
+                <h3 style='text-align: center;' ><a href="FHSpage.htm"><span style="color:Blue; text-decoration:underline; font-weight:bold">French Honor Society</span></a> </h3>
+                <ul></ul>                                           
+                <p style='text-align: center;' ><img src= "images/Fleurdelis.gif" style='border:0px;' alt='' /> 
+                </p>
+                
+            </div>
+            
+            </td></tr></table>
+    <br /><br /><br />
+            
+	<!--body1 end-->	
+	
+<!-- #EndEditable --></td>
+	<td scope="col" class="c_r">&nbsp;</td>
+	</tr>
+	</table>
+
+<!--end content-->
+
+</div></div></div></div></div></div></div></div></div>
+
+
+<!--bottom-->
+
+<!--footer-->
+<div class="bottom">
+	<div class="bottom_r">
+		<div class="bottom_l">
+		
+		<div class="body3">	<!-- #BeginEditable "body3" -->
+		
+		<div class="footer">
+			
+				<div class="footer_l">
+				
+<!--Start favorites-->
+	<div id="favorites" style="left: 259px; top: 7px"><!-- #BeginLibraryItem "/Library/favorites.lbi" --><div class="favorites_button">
+<a href="javascript:bookmark()">
+<img src="graphics/favorites.png" class="favorites_button" alt="bookmark" width="70" height="80" /></a>
+</div><!-- #EndLibraryItem --></div>
+		
+<!--Start contact-->
+	<div id="contact" style="left: 174px; top: 7px"><!-- #BeginLibraryItem "/Library/contact.lbi" --><a href="mailto:hhsibwebmaster@gmail.com?subject=Message from website">
+<img src="graphics/contact_us.png" class="contact_button" alt="contact us" width="70" height="80" /></a><!-- #EndLibraryItem --></div>
+
+				</div>
+				
+				<div class="footer_r">
+				
+<!--Start site_info-->
+			<div id="site_info"><!-- #BeginLibraryItem "/Library/site_info.lbi" --><table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+Copyright © 2008. IB Alliance, Inc. All Rights Reserved. 
+</td>
+	</tr>
+</table><!-- #EndLibraryItem --></div>
+
+				</div>
+				
+			</div>
+		
+		<!-- #EndEditable --></div>
+			
+		</div>
+	</div>
+</div>
+			
+
+
+<!--main end--></div>
+<script type="text/javascript">
+
+    function showhidediv(divNum) {
+        var i = 0;
+        for (i = 1; i < 6; i++) {
+            divName = 'french' + i;
+            if (document.getElementById(divName) != null)
+                document.getElementById(divName).style.display = 'none';
+        }     
+        divName = 'french' + divNum;
+        if (document.getElementById(divName) != null) {
+            document.getElementById(divName).style.display = '';                     
+            
+        }
+    }
+    
+    
+
+
+</script>
+</body>
+
+<!-- #EndTemplate --></html>
+
+

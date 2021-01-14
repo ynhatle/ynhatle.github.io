@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="HHSDatabase" Class="IBStudentsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.IB_Students" Member="IB_Students">
+    <Type Name="IB_Student">
+      <Column Name="StudentNo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="Char(50)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="Char(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="Char(150)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="Char(50)" CanBeNull="true" />
+      <Column Name="Phone1" Type="System.String" DbType="Char(12)" CanBeNull="true" />
+      <Column Name="Phone2" Type="System.String" DbType="Char(12)" CanBeNull="true" />
+      <Column Name="Homeroom" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+      <Column Name="ClassOf" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="Parents" Type="System.String" DbType="Char(100)" CanBeNull="true" />
+      <Column Name="ParentEmail1" Type="System.String" DbType="Char(50)" CanBeNull="true" />
+      <Column Name="ParentEmail2" Type="System.String" DbType="Char(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,5 @@
+C:\Documents and Settings\Thuy Nguyen\My Documents\Visual Studio 2008\Projects\HHSIB\HHSIB\bin\HHSIB.dll
+C:\Documents and Settings\Thuy Nguyen\My Documents\Visual Studio 2008\Projects\HHSIB\HHSIB\bin\HHSIB.pdb
+C:\Documents and Settings\Thuy Nguyen\My Documents\Visual Studio 2008\Projects\HHSIB\HHSIB\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Thuy Nguyen\My Documents\Visual Studio 2008\Projects\HHSIB\HHSIB\obj\Release\HHSIB.dll
+C:\Documents and Settings\Thuy Nguyen\My Documents\Visual Studio 2008\Projects\HHSIB\HHSIB\obj\Release\HHSIB.pdb

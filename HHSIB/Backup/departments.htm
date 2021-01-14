@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- #BeginTemplate "Templates/fullscreen.dwt" --><!-- DW6 -->
+
+<head>
+<!-- #BeginEditable "meta" -->
+<title>Departments</title>
+<meta name="language" content="en-US" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Links to Style Sheets Begin-->
+<link href="styles/fullscreen.css" rel="stylesheet" type="text/css" />
+<link href="styles/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="styles/menu.css" rel="stylesheet" type="text/css" />
+<link href="styles/fonts.css" rel="stylesheet" type="text/css" />
+<!-- Links to Style Sheets End-->
+
+<!-- Links to Javascript files Begin-->
+<script type="text/javascript" src="javascript/swfobject.js"></script>
+<script type="text/javascript" src="javascript/special_functions.js" ></script>
+<script type="text/javascript" src="javascript/faq.js" ></script>
+<script type="text/javascript" src="javascript/menu.js"></script>
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="../javascript/faq.js"></script>
+<![endif]-->
+<!-- Links to Javascript files End-->
+
+<!-- #BeginEditable "flash_variables" -->
+<script type="text/javascript">
+    // if this page is in:
+    //   the root folder, then set this variable to ./
+    //   a sub folder one level deep, then set this variable to ../
+    //   a sub folder two levels deep, then set this variable to ../../
+    var rootFlashLocation = "./";
+    var music_on = 1; // 0 = off, 1 = on
+    var clock24hour = 1; // 0 = 12 hour clock, 1 = 24 hour clock
+    var maxIntroViews = -1; // -1 = always display, 0 = never display, and any other positive integer = the number of times to display the intro sequence
+    var isPersistantCookie = 0; // 0 =  no, 1 = yes -- persistant means it will save even after the user closes their browser
+</script>
+<!-- #EndEditable -->
+
+</head>
+
+<body>
+
+<!--main-->
+	<div id="main">
+	
+<!--top-->
+	<div class="top">
+		<div class="top_r">
+			<div class="top_l">
+			
+<!--header-->
+	<div class="header">
+	
+	<!--flash header-->
+	<div id="template_flash" style="left: 133px; top: 100px">
+		<div id="flashcode"></div></div>
+		<script type="text/javascript">
+		    var so = new SWFObject(rootFlashLocation + "flash/flash-images/template-images.swf", "flashcode", "200", "100", "6");
+		    so.addParam("wmode", "transparent");
+		    so.addParam("base", rootFlashLocation);
+		    so.addVariable("music_on", music_on);
+		    so.addVariable("clock24hour", clock24hour);
+		    so.write("flashcode");
+		</script>
+		
+<!--page title-->
+	<div id="page_title" style="left: 225px; top: 5px">
+		<!-- #BeginEditable "page_title" --><h1>Departments</h1><!-- #EndEditable --></div>
+
+<!--icons-->
+	<div id="icons" style="left: 140px; top: 247px; position:absolute"><!-- #BeginLibraryItem "/Library/icons.lbi" --><table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+<img src="graphics/home.png" width="20" height="20" alt="home" /><a href="index.htm">Home</a>
+<img src="graphics/contact.png" width="20" height="20" alt="contact" /><a href="contact.htm">Contact</a>
+<!--img src="graphics/sitemap.png" width="20" height="20" alt="sitemap" /><a href="sitemap.htm">Search</a--></td>
+	</tr>
+</table><!-- #EndLibraryItem --></div>
+    <div id="search" style="left: 400px; top: 245px" class="body1"><h1>IB Departments</h1></div>
+<!--search-->
+	<!--div id="search" style="right: 136px; top: 252px"><!-- #BeginLibraryItem "/Library/google_search.lbi" --><!-- Google CSE Search Box Begin222s -->
+<!--script type="text/javascript">
+
+    // Google Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
+    // For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+    // This notice must stay intact for use
+
+    //Enter domain of site to search.
+    var domainroot = "www.i3dthemes.com"
+
+    function Gsitesearch(curobj) {
+        curobj.q.value = "site:" + domainroot + " " + curobj.qfront.value
+    }
+
+    function submitSearchForm() {
+        var myForm = document.getElementById("searchForm");
+
+        Gsitesearch(myForm);
+        myForm.submit();
+    }
+</script>
+<form id="searchForm" action="http://www.google.com/search" method="get" onsubmit="Gsitesearch(this)">
+<span class="search-container"><input name="q" type="hidden" />
+<input name="qfront"  class="searchbox" type="text" style="width: 100px" /> 
+<a href="javascript:submitSearchForm()"><img alt="" class="search" src="graphics/search.gif" /></a>
+</span></form>
+<!-- #EndLibraryItem --><!--/div-->
+
+<!--top button-->
+	<div id="top_buttons_w"  style="right:185px; top: 207px; position:absolute">
+	
+	<!-- #BeginLibraryItem "/Library/top_buttons.lbi" -->
+	<div class="chromestyle" id="chromemenu">
+        <ul>         
+        <li><a href="class_news.htm">News</a></li>       
+        <li><a href="" rel="dropmenu1">Class News</a></li>
+        <li><a href="college_lab.htm">College Lab</a></li>
+        <li><a href="" rel="dropmenu3">IB Office</a></li> 
+        <li><a href="" rel="dropmenu5">Calendar</a></li>        
+        <li><a href="" rel="dropmenu4">CAS Info</a></li>
+        </ul>
+    </div>
+    
+    
+    <!--1st drop down menu -->                                                   
+    <div id="dropmenu1" class="dropmenudiv" style="width: 90px";>    
+    <a href="class_news_2009.htm">2009</a>
+    <a href="class_news_2010.htm">2010</a>
+    <a href="class_news_2011.htm">2011</a>
+    <a href="class_news_2012.htm">2012</a>
+    <a href="class_news_2013.htm">2013</a>
+    </div>
+
+    
+
+
+    <!--3rd drop down menu -->                                                   
+    <div id="dropmenu3" class="dropmenudiv" style="width: 100px;">
+    <a href="Coordinator.htm">Coordinator</a>
+    <a href="Counselor.htm">Counselor</a>
+    </div>
+    
+    <!--4th drop down menu -->                                                
+    <div id="dropmenu4" class="dropmenudiv" style="width: 105px;">
+    <a href="CAS.htm#0">CAS Document</a>
+    <a href="CAS.htm#1">What is CAS ?</a>
+    <a href="CAS.htm#2">CAS Guidelines</a>
+    <a href="CAS.htm#3">Nature of CAS</a>
+    <a href="CAS.htm#4">Questions</a>
+    <a href="CAS.htm#5">Organization</a>
+    <a href="CAS.htm#6">Examples</a>
+    </div>
+    
+    <!--5th drop down menu -->                                                
+    <div id="dropmenu5" class="dropmenudiv" style="width: 80px;">
+    <a href="ibCalendar.aspx">HHS IB</a>
+    <a href="http://hillsborough.mysdhc.org/18F676FF-00757E5A?object=/hillsborough_calendar&templates=RWD&ConfPosition=0&Calendar=1&infobar=no">HHS</a>
+    <a href="http://www.sdhc.k12.fl.us/info/calendars/">District</a>    
+    </div>
+
+    <script type="text/javascript">
+
+        cssdropdown.startchrome("chromemenu")
+    </script>
+    <!-- #EndLibraryItem -->
+    </div>
+<!-- end top button -->
+<!--logo-->
+	<div id="logo" style="left: 275px; top: 20px"><!-- #BeginLibraryItem "/Library/logo.lbi" -->
+	<div>
+        <img src="logo/logo.png" width="400" height="94" alt="logo" />
+    </div><!-- #EndLibraryItem -->
+    </div>
+<!--end logo -->
+
+	</div>
+	</div>
+	</div>
+	</div>	
+	
+<!--center-->
+	<div class="center">
+	<div class="c2">
+	<div class="c6">
+	<div class="c4">
+	<div class="c8">
+	<div class="c5">
+	<div class="c7">
+	<div class="c3">
+	<div class="c1">
+	
+<!--content tables-->
+	<table class="content">
+		<tr><td scope="col" class="c_l">&nbsp;</td>
+			<td scope="col" class="c_menu">
+
+	        <!-- #BeginEditable "body2" -->		
+    <div class="body2">
+    
+    <!--themed image-->
+	<div id="themed_image">
+		<div id="themed_image2"><!-- #BeginLibraryItem "/Library/themed_image.lbi" -->
+		<img border="0" src="flash/themed-image/themed-image.png" width="160" height="100" alt="themed image" /><!-- #EndLibraryItem --></div>
+	</div>
+
+    
+	<!--copy for left menu goes here-->
+
+    <!--menu--><!-- #BeginLibraryItem "/Library/vertical_menu.lbi" --> 
+    <div class="Vertical_Menu">
+	    <ul class="myVerticalMenu">
+	        <li><a href="ib_alliance_news.htm">IB Alliance News</a></li>
+	        <li><a href="fundraising.htm">Fundraising & Shop</a></li>		  
+	        <li><a href="sports_clubs.htm">Sports & Clubs</a></li>	           	        	        		
+		    <li><a href="faculty.htm">Faculty & Staff</a></li>
+		    <li><a href="departments.htm">Departments</a></li>
+		    <li><a href="travel.htm">Travel Tours</a></li>
+		    <li><a href="about_us.htm">About IB</a></li>
+            <li><a href="ib_alliance.htm">About IB Alliance</a></li>	
+		    <li><a href="Application.htm">About IB Application</a></li>	
+		    <li><a href="forms.htm">Forms & Links</a></li>		                
+            <li><a href="event_pics.htm">Events & Pictures</a></li>	
+            <li><a href="UserLogin.aspx?PARM=ParentPage">Parent Menu</a></li>	
+            <li><a href="UserLogin.aspx?PARM=AdminPage">Admin Menu</a></li>	
+            <li><a href="https://www.edline.net/pages/hills">EDLine</a></li>>		
+	    </ul>
+    </div><!-- #EndLibraryItem -->
+
+
+<!--menu end--><br />
+			
+<!-- #EndEditable --></div>
+
+	</td><td scope="col" class="c_c">&nbsp;</td>
+	<td scope="col" class="body1">
+	
+	
+<!--body-->		
+		
+
+<!-- #BeginEditable "body1" -->     
+    <br />
+    <table width="100%" border="0" cellpadding="5px 5px 5px 5px" class="body_heading"
+        <tr>
+            <td>
+            <p style='text-align: center; padding-top:10px; padding-bottom:10px' ><img src="images/forlangdept.gif" style='border:0px;' alt='' /> 
+            </p>
+            <h2><span style="font-weight:bold; color:Blue;">HHS IB World Language Study</span></h2>
+            <ul></ul>
+            <p>The World Languages Department is committed to engage students in active language learning, knowing that language and communication are at the heart of the human experience. Students are equipped, both linguistically and culturally, to communicate successfully in a pluralistic and global society. By engendering competence in more than one language and culture, students are enabled to communicate with people of other cultures in a variety of settings. This allows them to look beyond their customary borders and develop insight into their own language and culture, producing greater awareness of self, of other cultures, and their relationship to those cultures.
+            </p>
+            <ul></ul>
+            <h3>We believe students construct meaning best in World Languages when:</h3>
+            <ul><li>language is taught using authentic materials and technology tools. 
+            </li><li>all language skills are taught: writing, reading, speaking, and listening. 
+            </li><li>placement is determined according to the student's background and language ability. 
+            </li><li>social values of the target country are introduced and reinforced through language instruction. 
+            </li><li>students acquire language by memorization and by practical exercises and experiences (projects, presentations, etc.) 
+            </li><li>our learning environment is global in scale. 
+            </li><li>language and culture are integrated into the entire school experience. 
+            </li><li>students learn in a variety of ways and settings. 
+            </li><li>language and culture education incorporate effective instructional strategies and authentic assessment procedures. 
+            </li><li>language and culture education develop and enhance basic communication goal areas (communication, culture, comparison, community, and connection). 
+            </li><li>the diverse range of students' linguistic abilities and cultural backgrounds is respected. 
+            </li><li>content and pedagogy are interesting, meaningful, and student-centered. 
+            </li><li>students learn in an atmosphere of mutual respect. 
+            </li></ul><h3>World Languages teachers agree to:</h3>
+            <ul><li>provide students opportunities to present their ideas through writing and speaking in class. 
+            </li><li>provide materials appropriate to the level of the student's language ability. 
+            </li><li>relate language acquisition to the cultural and social environment of the target language. 
+            </li><li>use materials that are relevant to the students' lives. 
+            </li><li>encourage cooperative learning so that students can share and express their ideas and opinions.
+            </li></ul> 
+            </td>
+        </tr>        
+    </table>
+    <div class="body_heading"><h1>World Languages</h1></div>
+    <ul>
+        <li><h2><a href="french_study.htm"><span style='color: blue; font-style:italic; text-decoration:underline'>French Studies</span></a></h2></li>
+        <li><h2><a href="spanish_study.htm"><span style='color: green; font-style:italic;text-decoration:underline'>Spanish Studies</span></a></h2></li>
+    </ul>
+    
+    <div class="body_heading"><h1>World Travel Programss</h1></div>
+    <ul>
+        <li><h2><a href="travel.htm#Tour2010"><span style='color:Teal; font-style:italic; text-decoration:underline'>European Travel 2010</span></a></h2></li>
+        <li><h2><a href="travel.htm#Tour2009"><span style='color:Fuchsia; font-style:italic; text-decoration:underline'>European Travel 2009</span></a></h2></li>
+    </ul>
+    <br /><br />
+    <div class="body_heading"><h1>Theory Of Knowledge</h1></div>
+    <table width="100%" border="0" cellpadding="5px 5px 5px 5px" class="body_heading">
+        <tr>
+	        <td>
+	            <h2><span style="font-weight:bold; color:Blue;">What is Theory of Knowledge?</span> </h2>
+	            TOK is an epistemological (study of knowledge) course.  TOK is central to the core of the IB program and represents the confluence of student academic and extra-curricular experience.  Manifests of these experiences are seen in the CAS requirement and the Extended Essay, both of which are tied to TOK.
+                <br /><br />
+                NOTE: The following attempts to encapsulate the goals and focus of TOK.  It should be understood that this is simplified, and that the course is multi-faceted with limitless possibilities for intellectual exploration.
+                <br /><br />              
+                The course attempts to:
+                <ul>
+                    <li>examine the origins and validity of multiple forms of knowledge (content, experience, sensations, language, emotion, reason)</li>
+                    <li>guide IB students toward a complete recognition of what they already know;
+                    </li><li>guide IB students toward understanding the complex interrelationships and applications of content knowledge (their schooling);
+                    </li><li>promote critical reflection and understanding on what students think they know;
+                    </li><li>promote critical reflection and understanding on what others know;
+                    </li><li>promote understanding from multiple perspectives including, but not limited to, other cultures, gender, occupations, religious backgrounds, etc.
+                </ul>
+                The course tends to be very question-oriented with considerable class discussion and student monitoring of those discussions.  Class participation is therefore a major component of the grade.
+                
+                Other IB requirements for TOK include:
+                <ol>
+                    <li>TOK Internal Assessment: An approximate 1500 word paper based on an assigned question from IB.  Details on this paper will be disseminated in November or December.</li>
+                    <li>TOK oral project: individual or group project based on a student-selected knowledge issue. Details regarding this project will be disseminated in November and December.</li>
+                </ol>
+                	        
+	        </td>
+	    </tr>
+	</table>
+    
+    <br /><br /><br />
+            
+	<!--body1 end-->	
+	
+<!-- #EndEditable --></td>
+	<td scope="col" class="c_r">&nbsp;</td>
+	</tr>
+	</table>
+
+<!--end content-->
+
+</div></div></div></div></div></div></div></div></div>
+
+
+<!--bottom-->
+
+<!--footer-->
+<div class="bottom">
+	<div class="bottom_r">
+		<div class="bottom_l">
+		
+		<div class="body3">	<!-- #BeginEditable "body3" -->
+		
+		<div class="footer">
+			
+				<div class="footer_l">
+				
+<!--Start favorites-->
+	<div id="favorites" style="left: 259px; top: 7px"><!-- #BeginLibraryItem "/Library/favorites.lbi" --><div class="favorites_button">
+<a href="javascript:bookmark()">
+<img src="graphics/favorites.png" class="favorites_button" alt="bookmark" width="70" height="80" /></a>
+</div><!-- #EndLibraryItem --></div>
+		
+<!--Start contact-->
+	<div id="contact" style="left: 174px; top: 7px"><!-- #BeginLibraryItem "/Library/contact.lbi" --><a href="mailto:hhsibwebmaster@gmail.com?subject=Message from website">
+<img src="graphics/contact_us.png" class="contact_button" alt="contact us" width="70" height="80" /></a><!-- #EndLibraryItem --></div>
+
+				</div>
+				
+				<div class="footer_r">
+				
+<!--Start site_info-->
+			<div id="site_info"><!-- #BeginLibraryItem "/Library/site_info.lbi" --><table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+Copyright © 2008. IB Alliance, Inc. All Rights Reserved. 
+</td>
+	</tr>
+</table><!-- #EndLibraryItem --></div>
+
+				</div>
+				
+			</div>
+		
+		<!-- #EndEditable --></div>
+			
+		</div>
+	</div>
+</div>
+			
+
+
+<!--main end--></div>
+
+</body>
+
+<!-- #EndTemplate --></html>

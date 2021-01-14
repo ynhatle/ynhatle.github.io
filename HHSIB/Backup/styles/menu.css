@@ -1,0 +1,51 @@
+﻿/* Vertical_Menu */
+
+.Vertical_Menu				{width: 201px; margin: 0px;}
+.Vertical_Menu li a 		{height: 20px; voice-family: "\"}\""; voice-family: inherit; height: 20px;}	
+.Vertical_Menu li a:visited {padding:6px 0px 0px 45px;}						
+.Vertical_Menu li a:link 	{padding:6px 0px 0px 45px;}				
+.Vertical_Menu li a:hover 	{padding:6px 0px 0px 45px;}
+
+			
+.chromestyle ul				{padding: 7px 15px 14px 20px;}
+.chromestyle ul				{text-align: right;}  /*set value to "left", "center", or "right"*/												
+
+.chromestyle ul li a		{padding: 7px 20px 14px 15px;}
+.chromestyle ul li a:hover	{padding: 7px 20px 14px 15px;}
+
+.dropmenudiv				{border: 1px solid #322F17;}
+.dropmenudiv				{background-color: #727057;}
+.dropmenudiv a:hover        {background-color: #898568;}
+
+/*///////////////////////////////////////////////////*/
+
+.chromestyle{font-weight: bold;}
+
+.chromestyle:after{ /*Add margin between menu and rest of content in Firefox*/content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+.chromestyle ul{border: 0px solid #BBB;width: 100%;margin: 0px 0px 0px 0px;text-indent:0px;background: url("../graphics/menu_bg.gif")/*THEME CHANGE HERE*/}
+
+.chromestyle ul li{display: inline;margin:0px 0px 0px -4px;}
+
+.chromestyle ul li a{text-decoration: none;border-right: 0px solid #0C193F;background: url("../graphics/menu_bg_right.gif"); background-position: top right; background-repeat: no-repeat;/*THEME CHANGE HERE*/}
+
+.chromestyle ul li a:hover{width:200px;text-decoration: none;border-right: 0px solid #0C193F;background: url("../graphics/menu_bg_over.gif");background-position: top right; background-repeat: no-repeat;/*THEME CHANGE HERE*/}
+
+.chromestyle ul li a[rel] {background-image: url(../graphics/arrow.gif); background-position: 100% 45% ;}
+
+.chromestyle ul li a:hover[rel] { background-image: url(../graphics/arrow_hover.gif); background-position: 100% 45% ;}
+
+/* ######### Style for Drop Down Menu ######### */
+
+.dropmenudiv{position:absolute;top: 0;border-bottom-width: 0;line-height:18px;z-index:100;width: 200px;visibility: hidden;}
+
+.dropmenudiv a{width: auto;display: block;border-bottom: 1px solid #322F17; /*THEME CHANGE HERE*/padding: 2px 0;}
+
+* html .dropmenudiv a{ /*IE only hack*/width: 100%;}
+
+.menuAlignment 				{padding: 0px 0px 0px 0px;} ul.myVerticalMenu {list-style: none;margin: 0;padding: 0;} img {border: none;} 
+
+.Vertical_Menu				{width: 201px; margin: 0px;}
+.Vertical_Menu li a:visited {display: block; background: url('../graphics/vertical_menu.jpg');}						
+.Vertical_Menu li a:link 	{display: block; background: url('../graphics/vertical_menu.jpg');}		
+.Vertical_Menu li a:hover 	{background: url('../graphics/vertical_menu.jpg') 0 -26px;}		

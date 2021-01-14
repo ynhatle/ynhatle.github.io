@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- #BeginTemplate "Templates/index.dwt" --><!-- DW6 -->
+
+<head>
+<!-- #BeginEditable "meta" -->
+<title>Welcome to the HHS IB Website</title>
+<meta name="Keywords" content="place your keywords here" />
+<meta name="Description" content="place a description for your webpage here" />
+<!-- #EndEditable -->
+<meta name="language" content="en-US" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Links to Style Sheets Begin-->
+<link href="styles/index.css" rel="stylesheet" type="text/css" />
+<link href="styles/menu.css" rel="stylesheet" type="text/css" />
+<link href="styles/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="styles/fonts.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+</style>
+<!-- Links to Style Sheets End-->
+
+<!-- Links to Javascript files Begin-->
+<script type="text/javascript" src="javascript/swfobject.js"></script>
+<script type="text/javascript" src="javascript/special_functions.js"></script>
+<script type="text/javascript" src="javascript/intro_functions.js"></script>
+<script type="text/javascript" src="javascript/faq.js"></script>
+<script type="text/javascript" src="javascript/menu.js"></script>
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="../javascript/faq.js"></script>
+<![endif]-->
+<!-- Links to Javascript files End-->
+
+<!-- #BeginEditable "flash_variables" -->
+<script type="text/javascript">
+    // if this page is in:
+    //   the root folder, then set this variable to ./
+    //   a sub folder one level deep, then set this variable to ../
+    //   a sub folder two levels deep, then set this variable to ../../
+    var rootFlashLocation = "./";
+    var music_on = 1; // 0 = off, 1 = on
+    var clock24hour = 1; // 0 = 12 hour clock, 1 = 24 hour clock
+    var maxIntroViews = -1; // -1 = always display, 0 = never display, and any other positive integer = the number of times to display the intro sequence
+    var isPersistantCookie = 0; // 0 =  no, 1 = yes -- persistant means it will save even after the user closes their browser
+</script>
+<!-- #EndEditable -->
+
+</head>
+
+<body>
+
+<!--main-->
+	<div id="main">
+	
+		<div style="position: absolute; width: 1px; height: 1px; z-index: 2" id="myFlashLayer">
+	    <div id="intro-loader">
+	    </div></div>
+		<script type="text/javascript">
+		<!--
+		    var myCookie = getCookie();
+		    if (myCookie < maxIntroViews || maxIntroViews == -1) {
+		        // only set a cookie if there is a "max allowable views" value set
+		        if (maxIntroViews > 0) {
+		            setCookie(myCookie, isPersistantCookie);
+		        }
+
+		        // code to load intro sequence
+		        var so = new SWFObject(rootFlashLocation + "flash/intro.swf", "myFlashLayer", "656", "420", "6");
+		        so.addParam("base", rootFlashLocation);
+		        so.addParam("scale", "exactfit");
+		        so.addParam("wmode", "transparent");
+		        so.write("intro-loader");
+		    }
+  		//-->
+		</script>
+	
+<!--header-->
+	<div id="header">
+	
+<!--flash header-->
+	<div style="position:absolute;"><div id="flashcode"></div></div>
+		<script type="text/javascript">
+		    var so = new SWFObject(rootFlashLocation + "flash/header.swf", "flashcode", "656", "390", "6");
+		    so.addParam("wmode", "transparent");
+		    so.addParam("base", rootFlashLocation);
+		    so.addVariable("music_on", music_on);
+		    so.addVariable("clock24hour", clock24hour);
+		    so.write("flashcode");
+		</script>
+		
+<!--page title-->
+	<div id="page_title" style="left: 222px; top: 395px ">
+		<!-- #BeginEditable "page_title" --><h1>Welcome!</h1><!-- #EndEditable --></div>
+
+<!--icons-->
+	<div id="icons" style="left: 18px; top: 392px; position:absolute; height:25px"><!-- #BeginLibraryItem "/Library/icons.lbi" -->
+	<table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+            <img src="graphics/home.png" width="20" height="20" alt="home" /><a href="index.htm">Home</a>
+            <img src="graphics/contact.png" width="20" height="20" alt="contact" /><a href="contact.htm">Contact</a>
+            <!--img src="graphics/sitemap.png" width="20" height="20" alt="sitemap" /><a href="sitemap.htm">Search</a--></td>
+	</tr>
+    </table><!-- #EndLibraryItem -->
+    </div>
+		
+<!--top button-->
+	<div id="top_buttons_w"  style="right: 30px; top: 351px; position:absolute">
+	<!-- #BeginLibraryItem "/Library/top_buttons.lbi" -->
+	<div class="chromestyle" id="chromemenu">
+        <ul>         
+        <li><a href="class_news.htm">News</a></li>       
+        <li><a href="" rel="dropmenu1">Class News</a></li>
+        <li><a href="college_lab.htm">College Lab</a></li>        
+        <li><a href="" rel="dropmenu3">IB Office</a></li> 
+        <li><a href="" rel="dropmenu5">Calendar</a></li>        
+        <li><a href="" rel="dropmenu4">CAS Info</a></li>
+        </ul>
+    </div>
+    
+    <!--1st drop down menu -->                                                   
+    <div id="dropmenu1" class="dropmenudiv" style="width: 90px";>    
+    <a href="class_news_2009.htm">2009</a>
+    <a href="class_news_2010.htm">2010</a>
+    <a href="class_news_2011.htm">2011</a>
+    <a href="class_news_2012.htm">2012</a>
+    <a href="class_news_2013.htm">2013</a>
+    </div>
+   
+    <!--3rd drop down menu -->                                                   
+    <div id="dropmenu3" class="dropmenudiv" style="width: 100px;">
+    <a href="Coordinator.htm">Coordinator</a>
+    <a href="Counselor.htm">Counselor</a>
+    </div>
+    
+    <!--4th drop down menu -->                                                
+    <div id="dropmenu4" class="dropmenudiv" style="width: 105px;">
+    <a href="CAS.htm#0">CAS Document</a>
+    <a href="CAS.htm#1">What is CAS ?</a>
+    <a href="CAS.htm#2">CAS Guidelines</a>
+    <a href="CAS.htm#3">Nature of CAS</a>
+    <a href="CAS.htm#4">Questions</a>
+    <a href="CAS.htm#5">Organization</a>
+    <a href="CAS.htm#6">Examples</a>
+    </div>
+    
+    <!--5th drop down menu -->                                                
+    <div id="dropmenu5" class="dropmenudiv" style="width: 80px;">
+    <a href="ibCalendar.aspx">HHS IB</a>
+    <a href="http://hillsborough.mysdhc.org/18F676FF-00757E5A?object=/hillsborough_calendar&templates=RWD&ConfPosition=0&Calendar=1&infobar=no">HHS</a>
+    <a href="http://www.sdhc.k12.fl.us/info/calendars/">District</a>    
+    </div>
+
+    
+    <script type="text/javascript">
+
+        cssdropdown.startchrome("chromemenu")
+    </script>
+<!-- #EndLibraryItem -->
+
+    </div>
+<!--end top button -->
+		
+<!--logo-->
+<div id="logo" style="left: 90px; top: 0px; position:absolute">
+<!-- #BeginLibraryItem "/Library/logo.lbi" -->
+    <div>
+        <img src="logo/logo.png" width="400" height="94" alt="logo" />
+    </div><!-- #EndLibraryItem -->
+</div>
+<!--flash intro-->
+</div>
+<!--content-->
+<div id="content">
+	<div class="content">
+			
+<!--content tables-->
+	<table class="content">
+		<tr>
+			<td scope="col" class="c_l"></td>
+			<td scope="col" class="c_menu">
+	
+    <!-- #BeginEditable "body2" -->
+
+    <!--themed image-->
+	<div id="themed_image">
+		<div id="themed_image2">
+			<!--webbot bot="Include" U-Include="includes/themed_image.htm" TAG="BODY" -->
+        </div>
+    </div>
+
+    <!--menu top-->
+	<!--copy for left menu goes here-->
+    <div class="Vertical_Menu">
+	    <ul class="myVerticalMenu">
+	        <li><a href="ib_alliance_news.htm">IB Alliance News</a></li>
+	        <li><a href="fundraising.htm">Fundraising & Shop</a></li>		  
+	        <li><a href="sports_clubs.htm">Sports & Clubs</a></li>	           	        	        		
+		    <li><a href="faculty.htm">Faculty & Staff</a></li>
+		    <li><a href="departments.htm">Departments</a></li>
+		    <li><a href="travel.htm">Travel Tours</a></li>
+		    <li><a href="about_us.htm">About IB</a></li>
+            <li><a href="ib_alliance.htm">About IB Alliance</a></li>	
+		    <li><a href="Application.htm">About IB Application</a></li>	
+		    <li><a href="forms.htm">Forms & Links</a></li>		                
+            <li><a href="event_pics.htm">Events & Pictures</a></li>	
+            <li><a href="UserLogin.aspx?PARM=ParentPage">Parent Menu</a></li>	
+            <li><a href="UserLogin.aspx?PARM=AdminPage">Admin Menu</a></li>	
+            <li><a href="https://www.edline.net/pages/hills">EDLine</a></li>
+	    </ul>
+    </div><!-- #EndLibraryItem -->
+<!--webbot bot="Include" i-checksum="9297" endspan --><br />
+    <div class="news"><div class="n2"><div class="n6"><div class="n4"><div class="n8"><div class="n5"><div class="n7"><div class="n3"><div class="n1">
+    <div class="news_content">
+    				
+	    <div class="news_heading">Events & Updates</div>
+	        <!--Start Scroller Script-->
+            <!-- TO REMOVE THE SCROLLER, DELETE THE FOLLOWING TWO LINES -->
+            <script type="">var iframesrc="includes/ns.htm"</script>
+            <script type="" src="javascript/scroller.js"></script>
+            <!-- TO EDIT THE SCROLLER, EDIT THE iframe_content.htm PAGE -->
+            <!--End Scroller Script-->      
+	    </div>
+    </div>
+    </div></div></div></div></div></div></div></div>	
+    
+<!--webbot bot="Include" U-Include="includes/info_box.htm" TAG="BODY" -->
+    <!--<div class="info">
+		<h1>Information Box</h1>
+		<!--<p>Put your special info images, banner adds or what ever you need to 
+		draw attention to in this area.</p>
+	</div>-->
+
+<!--
+<p>&nbsp;
+</p>
+<p>&nbsp;</p>
+	-->
+<!--menu end--><br />
+			
+<!-- #EndEditable -->	
+		
+		</td><td scope="col" class="c_c">&nbsp;</td>
+		<td scope="col" class="body1">
+		
+<!--body-->		
+		
+            <!-- #BeginEditable "body1" -->
+
+
+
+	<div class="body_heading"><h1>HHS International Baccalaureate</h1></div>
+<!-- #EndLibraryItem -->
+
+<!--body1 start--> 
+            
+<!--Announcement --> 
+    <table border="0" width="100%">      
+        <tr>        	        
+	        <td class="headline_text"> 
+	        <h2>Turkey Break !!! Happy Thanksgiving !!! </h2>
+	        <span style="color:#FF3118">
+	        <br />Hillsborough County Public Schools will be closed the entire week of <b>Thanksgiving, November 23 - 27, 2009</b>. In keeping with tradition at Hillsborough, the IB program will once again have a "Turkey Break" in our classes. "Turkey Break" basically means, where it is academically feasible, students will not have any homework and/or major projects due the cycle after the Thanksgiving break. The spirit behind "Turkey Break" is for our students to rest from school work, enjoy their families, stay up late, sleep in, and have fun with their friends during the week of Thanksgiving.
+            <br /><br />In addition, I am encouraging our faculty and staff to also take a "Turkey Break". I certainly am! I have many things to be thankful for in my life. Near the top of my list is the privilege to work at a school with a gifted faculty, wonderful students, and supportive families.
+            <br /><br />Have a blessed Thanksgiving! 
+            <br />Anthony Jones
+            </span>
+            <br />PS: Report Cards will be given to students on Thursday, November 19, 2009
+            <center><img src="images/Corncop2.gif" alt="" height="80px" /></center>
+	        <br />
+	        <h2>New Scholarships information</h2>
+	        <br />Mrs. Gondek has posted the <a href="college_lab.htm">latest College Lab Issue 6 and information about Hillsborough Education Foundation Scholarships here.</a> All students check it out...
+	        <br /><br />
+	        <h2>Attention Senior IB Parents:</h2>
+	        <br />The final deadline to order your <span class="news_text_purple">graduation announcements and caps & gowns</span> is <span class="news_text_red">November 20th</span>. Please mail your orders to the 
+	        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Herff Jones Co.
+	        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6009 Dr. Martin Luther King Street North</i>
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;St. Petersburg, FL  33703
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;727-381-7714
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fax 727-381-7713
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.herffjonesstpete.com">www.herffjonesstpete.com</a>
+            <br /><br />
+	        <h2>HHS 2009 National Scholars picture</h2>
+	        <br /><span class="news_text_red">A Point of Pride!</span> HHS has the highest number of National Scholars in the county in 2009. A parent just sent in <a href="class_news_2009.htm">a group picture of these students</a> for sharing here. Congratulation!
+	        <br /><br />
+            <h2>Prospective students interested in applying for the IB program at HHS</h2>
+            <br />Please check out the <a href="Docs/Recruitment Fact Sheet 2010-2011.doc"><span class="news_text_blue_underline"><b>Recruitment Fact Sheet for 2010-2011</b></span></a> for information. Dates to remember:
+            <ul>
+                <li>Shadowing dates: from October 2009 to January 2010</li>                 
+                <li>HHS IB Open House: Jan 21st, 2010 (6:30pm)</li>
+            </ul>
+            </td>
+	    </tr>        
+     </table>
+     <!-- Headlines --> 
+     <a id="DivHL" name="DivHL"></a>     
+     <table border="0" width="100%">                    
+        <tr>
+            <td><div class="body_heading"><h1>News headlines</h1></div>         
+               <ul class="headlines">
+                   <li><a href="Docs/Recruitment Fact Sheet 2010-2011.doc">11.10.09: Recruitment Facts Sheet updates</a></li> 
+                   <li><a href="college_lab.htm">11.05.09: College Lab Issue 5</a></li>
+                   <li><a href="class_news_2009.htm">11.01.09: 2009 National Scholars picture in Class of 2009 News</a></li>  
+                   <li><a href="Coordinator.htm">10.24.09: School Board policy added on Coordinator page</a></li>
+                   <li><a href="ib_alliance_news.htm">10.24.09: IB Alliance News October report</a></li>
+                   <li><a href="ib_alliance.htm">10.24.09: 2009-2010 IB Alliance Members update</a></li>
+                   <li><a href="college_lab.htm">10.19.09: College Lab Issue 4</a></li>              
+                   <li><a href="Application.htm">10.10.09: IB Application Process update</a></li>
+                   <li><a href="college_lab.htm">10.09.09: College Visit Calendar updated</a></li>
+                   <li><a href="class_news.htm">10.08.09: PSAT Oct 14th information</a></li>
+                   <li><a href="faculty.htm">10.01.09: Mr. Humphrey's info is added to Staff & Faculty page</a></li>                   
+                   <li><a href="college_lab.htm">09.25.09: College Visit Calendar updated by Ms. Gondek</a></li> 
+                   <li><a href="counselor.htm">09.15.09: College News from Ms. Holcombe in Counselor</a></li>                   
+                   <li><a href="class_news_2010.htm">09.14.09: Senior Class Cap&Gown Order Information</a></li>
+                   
+                </ul>
+            </td>
+        </tr>      
+        <tr>
+            <td><a href="index.htm#OldHL" onclick="showHideDiv('OldHL');">
+            <span class="headline_more">More headlines...</span></a>
+            <div id="DivOldHL" style="display:none">
+            <ul class="headlines">
+            <li><a href="ib_alliance_news.htm">09.14.09: Parent volunteers Invitation</a></li>
+                   <li><a href="SHSpage.htm">09.14.09: Spanish Honor Society Updates</a></li>
+                   <li><a href="class_news.htm">09.11.09: EDLine Information</a></li>
+                   <li><a href="college_lab.htm">09.10.09: College Visit Calendar updates</a></li>
+                   <li><a href="https://www.edline.net/pages/hills">09.08.09: EDLine Link is added to left-side menu</a></li>
+                   <li><a href="college_lab.htm">09.02.09: Free SAT, ACT  Prep Classes for Junior and Senior</a></li>
+                   <li><a href="coordinator.htm">09.01.09: Message from Mr. Jones & comming events</a></li>                   
+            
+            
+            </ul> 
+            </div></td>
+        </tr>        
+    </table>
+            
+                          
+    <br /><br />        
+            
+<!--Intro -->  
+              
+    <table border="0" width="100%">
+        <tr>
+            <td style="background:url(graphics/news_bg.jpg) repeat-x;"></td>
+        </tr>
+        <tr>
+            <td>
+            Welcome to the <a href="http://www.hhsib.org"><b>Hillsborough High School International Baccalaureate Alliance</b></a> (HHSIB) Website.                   
+            
+            <br /><br />Our objectives are:
+                <ul>
+                    <li>Information sources about our School and IB program</li>
+                    <li>Communication links between HHS IB Staff, Parents and Students.</li>
+                </ul> 
+            Our main contents are:
+                <ul>
+                    <li>Information about IB program 
+                    (<a href="http://www.ibo.org">IBO link</a>, <a href="about_us.htm">About IB</a>,
+                    <a href= "CAS.htm">CAS Info</a>).</li>
+                    <li>Information about the HHSIB program 
+                    (<a href="faculty.htm">Faculty & Staff</a>,
+                    <a href= "Application.htm">IB Application</a>,
+                    <a href="http://hillsborough.mysdhc.org/">HHS Link</a>)</li>
+                    <li>Communication from HHSIB Staff (
+                    <a href="class_news.htm">News</a>,
+                    <a href="class_news_2010.htm">Class News</a>, 
+                    <a href="college_lab.htm">College Lab</a>,
+                    <a href="Counselor.htm">IB Office</a>.)</li>
+                    <li>Information about Student activities 
+                    (<a href="class_news.htm">News</a>,
+                    <a href="class_news_2010.htm">Class News</a>, 
+                    <a href="ibCalendar.aspx">IB Calendar</a>,
+                    <a href="sports_clubs.htm">Sports&Clubs</a>, 
+                    <a href="departments.htm">Departments</a>,,
+                    <a href="travel.htm">Travel Tours</a>)</li>
+                    <li>Information about IB Alliance activities (
+                    <a href="ib_alliance_news.htm">IB Alliance News</a>, 
+                    <a href="fundraising.htm">Fundraising</a>,
+                    <a href="ib_alliance.htm">About IB Alliance</a>)</li>
+                    <li><a href="UserLogin.aspx?PARM=ParentPage">Parent Menu.</a>: Student online directory</li>                                  
+                    <li>
+                    <a href="UserLogin.aspx?PARM=AdminPage">Admin Menu</a>: for admin only.</li>  
+                </ul> 
+            Hillsborough High School has been an IB World School since January 1991. It offers the IB Diploma Program. <a href="mailto:william.orr@sdhc.k12.fl.us">Dr. William Orr</a> is the Principal and <a href="mailto:anthony.jones@sdhc.k12.fl.us">Mr. Anthony Jones</a> is the Assistant Principal for Magnet Curriculum.</p>
+            <br />
+            <span style="font-size:8pt; font-style:italic;">This Website is supported by the HHS IB Alliance Committee.</span>
+            </td>
+        </tr>    
+        </table>
+        <!-- #EndEditable -->
+        </td>
+        <td scope="col" class="c_r">&nbsp;</td>
+        </tr>
+    </table>
+    
+    
+    </div></div>
+	
+<!--end content-->
+
+<!--footer-->
+    <!-- #BeginEditable "body3" -->
+    <div id="footer">
+    <!-- #BeginEditable "body3" -->
+        <!--footer left-->
+	    <div class="footer_l">
+        <!--Start favorites-->
+		    <div id="favorites" style="left: 138px; top: 64px">
+		        <!--webbot bot="Include" U-Include="includes/favorites.htm" TAG="BODY" startspan -->
+                <div class="favorites_button">
+                    <a href="javascript:bookmark()">
+                    <img src="graphics/favorites.png" class="favorites_button" alt="bookmark" width="70" height="80" /></a>
+                </div>
+                <!--webbot bot="Include" i-checksum="53367" endspan --></div>
+                <!--Start contact-->
+			    <div id="contact" style="left: 54px; top: 64px">
+				    <!--webbot bot="Include" U-Include="includes/contact.htm" TAG="BODY" startspan -->
+                    <a href="mailto:hhsibwebmaster@gmail.com?subject=Message from website">
+                    <img src="graphics/contact_us.png" class="contact_button" alt="contact us" width="70" height="80" /></a>
+
+                    <!--webbot bot="Include" i-checksum="12164" endspan --></div>
+		        </div>
+    		
+                <!--footer right-->
+		        <div class="footer_r">
+
+                <!--Start site_info-->
+			        <div id="site_info_index">
+				    <!--webbot bot="Include" U-Include="includes/site_info.htm" TAG="BODY" startspan -->
+
+                    <table border="0" width="100%" cellpadding="0" cellspacing="0">
+	                    <tr>
+		                    <td>Copyright © 2008. IB Alliance, Inc. All Rights Reserved.</td>
+	                    </tr>
+                    </table>
+
+                    <!--webbot bot="Include" i-checksum="38442" endspan -->
+                    </div>
+                        <!--bottom_links-->
+                        			
+                        
+                </div>			
+		    </div>	
+	<!-- #EndEditable -->
+	
+<!--end footer-->
+</div><!--end main-->
+<script type="text/javascript">
+
+    function showHideDiv(divNum) {
+        divName = 'Div' + divNum;
+        if (document.getElementById(divName) != null) {
+            if (document.getElementById(divName).style.display == "none")
+                document.getElementById(divName).style.display = '';
+            else
+                document.getElementById(divName).style.display = "none";
+
+        }
+    }
+    
+
+</script>
+</body>
+<!-- #EndTemplate -->
+</html>  

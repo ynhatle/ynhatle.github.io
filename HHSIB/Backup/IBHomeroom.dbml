@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="HHSDatabase" Class="IBHomeroomDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.IB_Homeroom" Member="IB_Homerooms">
+    <Type Name="IB_Homeroom">
+      <Column Name="HomeroomId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

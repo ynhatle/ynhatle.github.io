@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- #BeginTemplate "Templates/fullscreen.dwt" --><!-- DW6 -->
+
+<head>
+<!-- #BeginEditable "meta" -->
+<title>Counselor</title>
+<meta name="Keywords" content="place your keywords here" />
+<meta name="Description" content="place a description for your webpage here" />
+<!-- #EndEditable -->
+
+<meta name="language" content="en-US" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Links to Style Sheets Begin-->
+<link href="styles/fullscreen.css" rel="stylesheet" type="text/css" />
+<link href="styles/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="styles/menu.css" rel="stylesheet" type="text/css" />
+<link href="styles/fonts.css" rel="stylesheet" type="text/css" />
+<!-- Links to Style Sheets End-->
+
+<!-- Links to Javascript files Begin-->
+<script type="text/javascript" src="javascript/swfobject.js"></script>
+<script type="text/javascript" src="javascript/special_functions.js" ></script>
+<script type="text/javascript" src="javascript/faq.js" ></script>
+<script type="text/javascript" src="javascript/menu.js"></script>
+
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="../javascript/faq.js"></script>
+<![endif]-->
+<!-- Links to Javascript files End-->
+
+<!-- #BeginEditable "flash_variables" -->
+<script type="text/javascript">
+// if this page is in:
+//   the root folder, then set this variable to ./
+//   a sub folder one level deep, then set this variable to ../
+//   a sub folder two levels deep, then set this variable to ../../
+var rootFlashLocation = "./";
+var music_on           = 1; // 0 = off, 1 = on
+var clock24hour        = 1; // 0 = 12 hour clock, 1 = 24 hour clock
+var maxIntroViews      = -1; // -1 = always display, 0 = never display, and any other positive integer = the number of times to display the intro sequence
+var isPersistantCookie = 0; // 0 =  no, 1 = yes -- persistant means it will save even after the user closes their browser
+</script>
+<!-- #EndEditable -->
+
+</head>
+
+<body>
+
+<!--main-->
+	<div id="main">
+	
+<!--top-->
+	<div class="top">
+		<div class="top_r">
+			<div class="top_l">
+			
+<!--header-->
+	<div class="header">
+	
+	<!--flash header-->
+	<div id="template_flash" style="left: 133px; top: 100px">
+		<div id="flashcode"></div></div>
+		<script type="text/javascript"> 
+		var so = new SWFObject(rootFlashLocation + "flash/flash-images/template-images.swf", "flashcode", "200", "100", "6");
+		so.addParam("wmode", "transparent");
+		so.addParam("base", rootFlashLocation);
+		so.addVariable("music_on", music_on);
+		so.addVariable("clock24hour", clock24hour);
+		so.write("flashcode");
+		</script>
+		
+<!--page title-->
+	<div id="page_title" style="left: 225px; top: 5px">
+		<!-- #BeginEditable "page_title" --><h1>Counselor </h1><!-- #EndEditable --></div>
+
+<!--icons-->
+	<div id="icons" style="left: 140px; top: 247px; position:absolute"><!-- #BeginLibraryItem "/Library/icons.lbi" --><table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+<img src="graphics/home.png" width="20" height="20" alt="home" /><a href="index.htm">Home</a>
+<img src="graphics/contact.png" width="20" height="20" alt="contact" /><a href="contact.htm">Contact</a>
+<!--img src="graphics/sitemap.png" width="20" height="20" alt="sitemap" /><a href="sitemap.htm">Search</a--></td>
+	</tr>
+</table><!-- #EndLibraryItem --></div>
+
+<div id="search" style="left: 400px; top: 245px" class="body1"><h1>IB Counselor</h1></div>
+<!--top button-->
+	<div id="top_buttons_w"  style="right:185px; top: 207px; position:absolute">
+	
+	<!-- #BeginLibraryItem "/Library/top_buttons.lbi" -->
+	<div class="chromestyle" id="chromemenu">
+        <ul>         
+        <li><a href="class_news.htm">News</a></li>       
+        <li><a href="" rel="dropmenu1">Class News</a></li>
+        <li><a href="college_lab.htm">College Lab</a></li>
+        <li><a href="" rel="dropmenu3">IB Office</a></li>
+        <li><a href="" rel="dropmenu5">Calendar</a></li>        
+        <li><a href="" rel="dropmenu4">CAS Info</a></li>
+        </ul>
+    </div>
+    
+    
+    <!--1st drop down menu -->                                                   
+    <div id="dropmenu1" class="dropmenudiv" style="width: 90px";>    
+    <a href="class_news_2009.htm">2009</a>
+    <a href="class_news_2010.htm">2010</a>
+    <a href="class_news_2011.htm">2011</a>
+    <a href="class_news_2012.htm">2012</a>
+    <a href="class_news_2013.htm">2013</a>
+    </div>
+
+    
+
+
+    <!--3rd drop down menu -->                                                   
+    <div id="dropmenu3" class="dropmenudiv" style="width: 100px;">
+    <a href="Coordinator.htm">Coordinator</a>
+    <a href="Counselor.htm">Counselor</a>
+    </div>
+    
+    <!--4th drop down menu -->                                                
+    <div id="dropmenu4" class="dropmenudiv" style="width: 105px;">
+    <a href="CAS.htm#0">CAS Document</a>
+    <a href="CAS.htm#1">What is CAS ?</a>
+    <a href="CAS.htm#2">CAS Guidelines</a>
+    <a href="CAS.htm#3">Nature of CAS</a>
+    <a href="CAS.htm#4">Questions</a>
+    <a href="CAS.htm#5">Organization</a>
+    <a href="CAS.htm#6">Examples</a>
+    </div>
+    
+    <!--5th drop down menu -->                                                
+    <div id="dropmenu5" class="dropmenudiv" style="width: 80px;">
+    <a href="ibCalendar.aspx">HHS IB</a>
+    <a href="http://hillsborough.mysdhc.org/18F676FF-00757E5A?object=/hillsborough_calendar&templates=RWD&ConfPosition=0&Calendar=1&infobar=no">HHS</a>
+    <a href="http://www.sdhc.k12.fl.us/info/calendars/">District</a>    
+    </div>
+
+    <script type="text/javascript">
+
+        cssdropdown.startchrome("chromemenu")
+    </script>
+    <!-- #EndLibraryItem -->
+    </div>
+<!-- end top button -->
+<!--logo-->
+	<div id="logo" style="left: 275px; top: 20px"><!-- #BeginLibraryItem "/Library/logo.lbi" -->
+	<div>
+        <img src="logo/logo.png" width="400" height="94" alt="logo" />
+    </div><!-- #EndLibraryItem -->
+    </div>
+<!--end logo -->
+
+	</div>
+	</div>
+	</div>
+	</div>	
+	
+<!--center-->
+	<div class="center">
+	<div class="c2">
+	<div class="c6">
+	<div class="c4">
+	<div class="c8">
+	<div class="c5">
+	<div class="c7">
+	<div class="c3">
+	<div class="c1">
+	
+<!--content tables-->
+	<table class="content">
+		<tr><td scope="col" class="c_l">&nbsp;</td>
+			<td scope="col" class="c_menu">
+
+	        <!-- #BeginEditable "body2" -->		
+    <div class="body2">
+    
+    <!--themed image-->
+	<div id="themed_image">
+		<div id="themed_image2"><!-- #BeginLibraryItem "/Library/themed_image.lbi" -->
+		<img border="0" src="flash/themed-image/themed-image.png" width="160" height="100" alt="themed image" /><!-- #EndLibraryItem --></div>
+	</div>
+
+    
+	<!--copy for left menu goes here-->
+
+    <!--menu--><!-- #BeginLibraryItem "/Library/vertical_menu.lbi" --> 
+    <div class="Vertical_Menu">
+	    <ul class="myVerticalMenu">
+	        <li><a href="ib_alliance_news.htm">IB Alliance News</a></li>
+	        <li><a href="fundraising.htm">Fundraising & Shop</a></li>		  
+	        <li><a href="sports_clubs.htm">Sports & Clubs</a></li>	           	        	        		
+		    <li><a href="faculty.htm">Faculty & Staff</a></li>
+		    <li><a href="departments.htm">Departments</a></li>
+		    <li><a href="travel.htm">Travel Tours</a></li>
+		    <li><a href="about_us.htm">About IB</a></li>
+            <li><a href="ib_alliance.htm">About IB Alliance</a></li>	
+		    <li><a href="Application.htm">About IB Application</a></li>	
+		    <li><a href="forms.htm">Forms & Links</a></li>		                
+            <li><a href="event_pics.htm">Events & Pictures</a></li>	
+            <li><a href="UserLogin.aspx?PARM=ParentPage">Parent Menu</a></li>	
+            <li><a href="UserLogin.aspx?PARM=AdminPage">Admin Menu</a></li>	
+            <li><a href="https://www.edline.net/pages/hills">EDLine</a></li>		
+	    </ul>
+    </div><!-- #EndLibraryItem -->
+
+			
+<!-- #EndEditable --></div>
+
+	</td><td scope="col" class="c_c">&nbsp;</td>
+	<td scope="col" class="body1">
+	
+	
+<!--body-->		
+		
+<!-- #BeginEditable "body1" -->
+    <div class="body_heading">
+    <h1>From the IB Counselor</h1></div>	
+	
+	<table width="100%" border="0" >
+	    <tr>
+	        <td>
+	            <br />
+	            <span class="news_header_BOS">New information from the State University System</span> 
+	            <ul>           
+                    <li><span class="news_text_red">FSU</span> – If your file is complete for the <span class="news_text_red">October 14 deadline</span>, including at least one complete SAT or ACT with Writing test score, they will include October and November scores in your decision. </li>
+                    <li><span class="news_text_red">UF</span> – Your ACT score must include the Writing section to be considered for admission. </li>
+                </ul>     
+                
+                <span class="news_header_BOS">Advice from admissions directors </span>
+                <br /><br /><span style="color:Red; font-weight:bold; font-style:italic">College visits</span>
+                <ul>
+                    <li>Plan ahead and schedule your visit </li>
+                    <li>Visit while students are in session</li> 
+                    <li>Visit a classroom </li>
+                    <li>Try the food and check residence halls </li>
+                    <li>Take the official campus tour and then walk around on your own and talk to students </li>
+                    <li>Stay in touch – write a thank you note </li>
+                    <li>Ask inspiring questions, not something you could read or have been told </li>
+                    <li>Stay relaxed and enjoy the experience </li>
+                    <li>Take notes and pictures, especially if you are visiting several colleges on the same trip </li>
+                    <li>Visit schools in the north during cold weather </li>
+                </ul> 
+                <span style="color:Red; font-weight:bold; font-style:italic">College Fairs</span>
+                <ul>
+                    <li>Make labels of your name, address and email so you don’t have to fill out all the information cards </li>
+                    <li>Think about the type of college you want to attend – location, size, etc. </li>
+                    <li>Prepare a list of questions and make notes </li>
+                    <li>Pre-register for the <span class="news_text_red">NACAC College Fair (Feb. 28, 2010)</span> and bring your bar code </li>
+                </ul>
+                
+            </td>
+	    
+	    </tr>
+	    <tr>
+            <td style="color:blue; font-size:smaller;" align="right">Posted: 09-14-2009</td>            
+        </tr>
+	    <tr>
+            <td style="background:url(graphics/news_bg.jpg) repeat-x;"></td>
+        </tr>  
+            
+	    <tr>
+	        <td align="center" class="body_heading">
+	            <br />
+	            <span style="color:Purple; font-size:12pt; font-family:Bookman Old Style"><b>2009-2010 ACT and SAT Test Dates</b>
+                <br /><br />ACT Plus Writing</span>
+                <br />Fee $47, register at <a href="http://www.act.org"><span style="color:Blue; text-decoration:underline">www.act.org</span></a>
+                <br />
+                <div align="left">
+                <table width="100%" border="2" cellspacing="0" cellpadding="5">
+                    <tr valign="top" style="background-color:#BFBFBF;">
+                        <td>Test Date</td>
+                          <td>Registration Deadline</td>
+                          <td>Late Fee Required – add $21</td></tr>
+                    <tr valign="top">
+                        <td>September 2, 2009 <br />
+                            October 24, 2009 <br />
+                            December 12, 2009 <br />
+                            February 6, 2010 <br />
+                            April 10, 2010 <br />
+                            June 12, 2010</td>
+                        <td>August 7, 2009 <br />
+                            September 18, 2009 <br />
+                            November 6, 2009 <br />
+                            January 5, 2010 <br />
+                            March 5, 2010 <br />
+                            May 7, 2010</td>
+                        <td>August 8 – 21, 2009 <br />
+                            September 19 – October 2, 2009 <br />
+                            November 7 – 20, 2009 <br />
+                            January 6 – 15, 2010 <br />
+                            March 6 – 19, 2010 <br />
+                            May 8 – 21, 2010
+                        </td>
+                     </tr>
+                </table>
+                </div>
+                <h4>*Fees as of 6/18/09, other fees may apply for additional services, check website</h4>
+                
+                <span style="color:Purple; font-size:12pt; font-family:Bookman Old Style">SAT </span>
+                <br />Fee $45, register at <a href="http://www.collegeboard.com"><span style="color:Blue; text-decoration:underline">www.collegeboard.com</span></a>
+                <br />
+                <div align="left">
+                <table width="100%" border="2" cellspacing="0" cellpadding="5">
+                    <tr valign="top" style="background-color:#BFBFBF;"><td>Test Date</td>
+                        <td>Registration Deadline</td>
+                        <td>Late Fee Required – add $23</td></tr>
+                    <tr valign="top">
+                        <td>October 10, 2009 <br />
+                        November 7, 2009 <br />
+                        December 5, 2009 <br />
+                        January 23, 2010 <br />
+                        March 13, 2010 <br />
+                        May 1, 2010 <br />
+                        June 5, 2010
+                      </td>
+                      <td>September 9, 2009 <br />
+                          October 1, 2009 <br />
+                          October 30, 2009 <br />
+                          December 15, 2009 <br />
+                          February 4, 2010 <br />
+                          Marcy 25, 2010 <br />
+                          April 29, 2010</td>
+                      <td>September 10 – 23, 2009 <br />
+                          October 2 – 15, 2009 <br />
+                          October 31 – November 12, 2009 <br />
+                          December 16 – 30, 2009 <br />
+                          February 5 – 18, 2009 <br />
+                          March 26 – April 8, 2010 <br />
+                          April 30 – May 13, 2010</td>
+                    </tr>
+                </table>
+                </div>
+                <h4>*Fees as of 6/18/09, other fees may apply for the SAT Subject Area Tests and additional services, check website</h4>
+                 
+	        </td>
+	    
+	    </tr>
+	    <tr>
+            <td style="color:blue; font-size:smaller;" align="right">Posted: 06-17-2009</td>            
+        </tr>
+	    <tr>
+            <td style="background:url(graphics/news_bg.jpg) repeat-x;"></td>
+        </tr>       
+        <!--
+	    <tr>
+            <td align="center"><span style="color:Purple; font-size:12pt; font-family:Bookman Old Style;"><b><br />SUMMER UPDATE !</b></span>          
+            <div align="left">
+            <span style="font-style:italic;">
+            
+            <br /><span style="color:Red; font-weight:bold">Class of 2009</span>
+            
+            <br /><br />The Class of 2009 graduates are moving on to exciting experiences at college.  They were accepted to some wonderful schools and here are their final decisions:
+            <table border="0">
+                <tr>
+                    <td><br />Auburn University – 1
+                        <br />Barnard College – 1
+                        <br />Boston University – 1
+                        <br />Brandeis University – 1
+                        <br />Brown University – 1
+                        <br />Clemson University – 1
+                        <br />Colgate University – 1
+                        <br />Columbia University – 1
+                        <br />Cornell University – 1
+                        <br />Dartmouth College – 2
+                        <br />Davidson College – 1
+                        <br />Duke University – 2
+                        <br />Elon University – 1
+                        <br />Emory University – 3
+                        <br />Florida Institute of Technology – 1
+                        <br />Florida State University – 15
+                        <br />Georgetown University – 1
+                        <br />Howard University – 2
+                        <br />Ithaca College – 1
+                        <br />Jacksonville University – 1
+                        <br />Manhattan College – 1
+                        <br />McGill University, Canada – 2
+                        <br />Morehouse College – 1</td>
+                    <td><br />New College of Florida – 1
+                        <br />New York University – 1
+                        <br />Northeastern University – 1
+                        <br />Nova Southeastern University – 2
+                        <br />Oxford College, UK – 1
+                        <br />Rochester Institute of Technology – 1
+                        <br />Rollins College – 1
+                        <br />Tulane University – 1
+                        <br />United States Air Force Academy – 1
+                        <br />University of Alabama – 1
+                        <br />University of Central Florida – 1
+                        <br />University of Florida – 47
+                        <br />University of Miami – 2
+                        <br />U. of North Carolina at Chapel Hill – 1
+                        <br />University of Pennsylvania – 2
+                        <br />University of Pittsburgh – 1
+                        <br />University of South Florida – 15
+                        <br />University of Southern California – 1
+                        <br />University of Tampa – 1
+                        <br />Vanderbilt University – 1
+                        <br />Washington University in St. Louis – 3
+                        <br />Washington and Lee University – 1
+                        <br />Williams College – 1 </td>
+                </tr>
+            </table> 
+            <br />We wish all of our graduates the best as they continue their education.   
+            <br /><br />Also, visit the district website,<a href="http://www.sdhc.k12.fl.us/">www.sdhc.k12.fl.us</a>, to see our valedictorian, Sonam Patel, highlighted in the “Spotlight on Seniors” link. 
+
+
+            <br /><br /><span style="color:Red; font-weight:bold">Class of 2010</span>
+            <br /><br />Welcome to your senior year. 
+            <br /><br />As you begin this final leg of your IB journey remember that it is time to start thinking about your college applications.  
+                        Take some time over the summer to get started filling out applications and writing essays.  Remember that we are here to help you though this process.  You can email your essays for review or ask questions as you work your way through the applications.  
+            <br /><br />Also, it will help if you complete your CAS requirements over the summer.  The more things you can complete during the summer, the better your senior year will be.   
+
+            <br /><br /><span style="color:Red; font-weight:bold">Class of 2011</span>
+            <br /><br />Juniors, you are getting ready to officially enter the IB Programme.  The most important thing to remember this year is to keep up.  Do your summer assignments now and be ready to begin the first day of school.  Your junior year will be easier if you do not procrastinate.  Managing your time is an important skill to master and this year will give you a great opportunity to practice it.  
+            <br /><br />One important date to remember is Wednesday, October 14.  We administer the PSAT that day and that is the only opportunity to qualify for National Merit, National Achievement and National Hispanic Scholars status.  
+            <br /><br />Start now by practicing PSAT type questions through “Question of the Day” at the CollegeBoard website.  Just a few minutes a day, several days a week, will help you get ready for the PSAT and SAT.  
+            <br /><br />You can also get started on CAS requirements.  Other than that, have a great summer. 
+
+            <br /><br /><span style="color:Red; font-weight:bold">Class of 2012</span>
+            <br /><br />Congratulations, you have competed your first year at HHS and are now sophomores.  You can work on CAS hours over the summer.  Find a project that interests you and continue it throughout high school.  Enjoy your summer. 
+
+            <br /><br /><span style="color:Red; font-weight:bold">Class of 2013</span>
+            <br /><br />Welcome to our incoming freshmen.  The application process was very competitive and we look forward to working with all of you as you begin your high school journey.  
+            <br /><br />You should have received information in the mail about the team building activity at the YMCA before school starts.  Please make every effort to attend because it is a great time to meet your classmates and you will receive your schedules there.  We’ll see you there!
+            </span></div>            
+            </td>
+        </tr>        
+        <tr>
+            <td><br />Mrs. Holcombe.</td>
+        </tr>     
+        <tr>            
+            <td style="color:blue; font-size:smaller;" align="right">Posted: 06-18-2009</td>            
+        </tr>      
+        <tr>
+            <td style="background:url(graphics/news_bg.jpg) repeat-x;"></td>
+        </tr>
+        --> 
+        <tr>
+            <td><br />Mrs. Holcombe.</td>
+        </tr> 
+        </table>
+	
+	<br /><br /><br />	
+	<!--body1 end-->	
+	
+<!-- #EndEditable -->
+
+</td>
+	<td scope="col" class="c_r">&nbsp;</td></tr></table>
+
+<!--end content-->
+
+</div></div></div></div></div></div></div></div></div>
+
+
+<!--bottom-->
+
+<!--footer-->
+<div class="bottom">
+	<div class="bottom_r">
+		<div class="bottom_l">
+		
+		<div class="body3">	<!-- #BeginEditable "body3" -->
+		
+		<div class="footer">
+			
+				<div class="footer_l">
+				
+<!--Start favorites-->
+	<div id="favorites" style="left: 259px; top: 7px"><!-- #BeginLibraryItem "/Library/favorites.lbi" --><div class="favorites_button">
+<a href="javascript:bookmark()">
+<img src="graphics/favorites.png" class="favorites_button" alt="bookmark" width="70" height="80" /></a>
+</div><!-- #EndLibraryItem --></div>
+		
+<!--Start contact-->
+	<div id="contact" style="left: 174px; top: 7px"><!-- #BeginLibraryItem "/Library/contact.lbi" --><a href="mailto:hhsibwebmaster@gmail.com?subject=Message from website">
+<img src="graphics/contact_us.png" class="contact_button" alt="contact us" width="70" height="80" /></a><!-- #EndLibraryItem --></div>
+
+				</div>
+				
+				<div class="footer_r">
+				
+<!--Start site_info-->
+			<div id="site_info"><!-- #BeginLibraryItem "/Library/site_info.lbi" --><table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+Copyright © 2008. IB Alliance, Inc. All Rights Reserved. 
+</td>
+	</tr>
+</table><!-- #EndLibraryItem --></div>
+
+
+				</div>
+				
+			</div>
+		
+		<!-- #EndEditable --></div>
+			
+		</div>
+	</div>
+</div>
+			
+
+
+<!--main end--></div>
+
+</body>
+
+<!-- #EndTemplate --></html>

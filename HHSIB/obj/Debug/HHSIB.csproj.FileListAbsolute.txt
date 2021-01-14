@@ -1,0 +1,18 @@
+C:\Documents and Settings\Thuy Nguyen\My Documents\Visual Studio 2008\Projects\HHSIB\HHSIB\bin\HHSIB.dll
+C:\Documents and Settings\Thuy Nguyen\My Documents\Visual Studio 2008\Projects\HHSIB\HHSIB\bin\HHSIB.pdb
+C:\Documents and Settings\Thuy Nguyen\My Documents\Visual Studio 2008\Projects\HHSIB\HHSIB\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Thuy Nguyen\My Documents\Visual Studio 2008\Projects\HHSIB\HHSIB\obj\Debug\HHSIB.dll
+C:\Documents and Settings\Thuy Nguyen\My Documents\Visual Studio 2008\Projects\HHSIB\HHSIB\obj\Debug\HHSIB.pdb
+F:\Backup-HHSIB\HHSIB Nov 2009\HHSIB\bin\HHSIB.dll.config
+F:\Backup-HHSIB\HHSIB Nov 2009\HHSIB\bin\HHSIB.dll
+F:\Backup-HHSIB\HHSIB Nov 2009\HHSIB\bin\HHSIB.pdb
+F:\Backup-HHSIB\HHSIB Nov 2009\HHSIB\obj\Debug\HHSIB.dll
+F:\Backup-HHSIB\HHSIB Nov 2009\HHSIB\obj\Debug\HHSIB.pdb
+F:\Backup-HHSIB\HHSIB Nov 2009\HHSIB\obj\Debug\HHSIB.csprojResolveAssemblyReference.cache
+C:\Users\Ynhat\Backup-HHSIB\HHSIB Nov 2009\HHSIB\bin\HHSIB.dll.config
+C:\Users\Ynhat\Backup-HHSIB\HHSIB Nov 2009\HHSIB\bin\HHSIB.dll
+C:\Users\Ynhat\Backup-HHSIB\HHSIB Nov 2009\HHSIB\bin\HHSIB.pdb
+C:\Users\Ynhat\Backup-HHSIB\HHSIB Nov 2009\HHSIB\bin\System.Web.Entity.dll
+C:\Users\Ynhat\Backup-HHSIB\HHSIB Nov 2009\HHSIB\obj\Debug\HHSIB.dll
+C:\Users\Ynhat\Backup-HHSIB\HHSIB Nov 2009\HHSIB\obj\Debug\HHSIB.pdb
+C:\Users\Ynhat\Backup-HHSIB\HHSIB Nov 2009\HHSIB\obj\Debug\HHSIB.csprojResolveAssemblyReference.cache

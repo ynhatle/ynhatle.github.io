@@ -1,0 +1,723 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D27841E-1B03-4CF6-A8BB-08416CA456C4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HHSIB</RootNamespace>
+    <AssemblyName>HHSIB</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20820.24138, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft ASP.NET\ASP.NET 2.0 AJAX Extensions\AJAX Control Toolkit\Binaries\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Entity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Entity\3.5.0.0__b77a5c561934e089\System.Web.Entity.dll</HintPath>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about_us.htm" />
+    <Content Include="AdminPages\AddStudents.aspx" />
+    <Content Include="AdminPages\Default.aspx" />
+    <Content Include="AdminPages\DirectoryUpdate.aspx" />
+    <Content Include="AdminPages\Homeroom.aspx" />
+    <Content Include="AdminPages\UpdateCalendar.aspx" />
+    <Content Include="AdminPages\ViewCalendar.aspx" />
+    <Content Include="Application.htm" />
+    <Content Include="App_Data\ChangePassword.txt" />
+    <Content Include="App_Data\LostPassword.txt" />
+    <Content Include="App_Data\NewMember.txt" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\HHSIB.dll" />
+    <Content Include="bin\HHSIB.pdb" />
+    <Content Include="CAS.htm" />
+    <Content Include="class_news.htm" />
+    <Content Include="class_news_2009.htm" />
+    <Content Include="class_news_2010.htm" />
+    <Content Include="class_news_2011.htm" />
+    <Content Include="class_news_2012.htm" />
+    <Content Include="class_news_2013.htm" />
+    <Content Include="college_lab.htm" />
+    <Content Include="contact.htm" />
+    <Content Include="departments.htm" />
+    <Content Include="ErrorPage.htm" />
+    <Content Include="graphics\btn_add.gif" />
+    <Content Include="graphics\btn_addto.jpg" />
+    <Content Include="graphics\btn_cancel.jpg" />
+    <Content Include="graphics\btn_done.jpg" />
+    <Content Include="graphics\btn_list.jpg" />
+    <Content Include="graphics\btn_load.jpg" />
+    <Content Include="graphics\btn_refresh.jpg" />
+    <Content Include="graphics\btn_login.jpg" />
+    <Content Include="graphics\red_bullet.gif" />
+    <Content Include="graphics\btn_search.jpg" />
+    <Content Include="graphics\btn_update.jpg" />
+    <Content Include="graphics\visitorparking.gif" />
+    <Content Include="images\AATFLogo.gif" />
+    <Content Include="images\Bonjour.gif" />
+    <Content Include="images\CruiseShipSapphire.jpg" />
+    <Content Include="images\FHSBanner.jpg" />
+    <Content Include="images\Fleurdelis.gif" />
+    <Content Include="images\forlangdept.gif" />
+    <Content Include="images\France1.jpg" />
+    <Content Include="images\RichardKathrynIBBanquet2005.jpg" />
+    <Content Include="images\shield.gif" />
+    <Content Include="images\SimpleFrenchFlag.jpg" />
+    <Content Include="images\SimpleSpanishFlag.jpg" />
+    <Content Include="images\SociedadLogo.gif" />
+    <Content Include="login.aspx" />
+    <Content Include="MemberPages\Directory.aspx" />
+    <Content Include="emptypage.htm" />
+    <Content Include="event_pics.htm" />
+    <Content Include="faculty.htm" />
+    <Content Include="FHSpage.htm" />
+    <Content Include="flash\animations\animations.swf" />
+    <Content Include="flash\flash-buttons\button1.swf" />
+    <Content Include="flash\flash-buttons\button2.swf" />
+    <Content Include="flash\flash-buttons\button3.swf" />
+    <Content Include="flash\flash-buttons\buttons.txt" />
+    <Content Include="flash\flash-buttons\flash-button1.jpg" />
+    <Content Include="flash\flash-buttons\flash-button2.jpg" />
+    <Content Include="flash\flash-buttons\flash-button3.jpg" />
+    <Content Include="flash\flash-buttons\flash-buttons.swf" />
+    <Content Include="flash\flash-images\flash-image2.jpg" />
+    <Content Include="flash\flash-images\flash-image4.jpg" />
+    <Content Include="flash\flash-images\flash-image3.jpg" />
+    <Content Include="flash\flash-images\flash-image1.jpg" />
+    <Content Include="flash\flash-images\flash-images.swf" />
+    <Content Include="flash\flash-images\template-images.swf" />
+    <Content Include="flash\header.swf" />
+    <Content Include="flash\icons\home.png" />
+    <Content Include="flash\icons\icon1.png" />
+    <Content Include="flash\icons\icon1.swf" />
+    <Content Include="flash\icons\icon2.png" />
+    <Content Include="flash\icons\icon2.swf" />
+    <Content Include="flash\icons\icon3.png" />
+    <Content Include="flash\icons\icon3.swf" />
+    <Content Include="flash\icons\icons.swf" />
+    <Content Include="flash\icons\icons.txt" />
+    <Content Include="flash\icons\sitemap.png" />
+    <Content Include="flash\intro.swf" />
+    <Content Include="flash\music\music.swf" />
+    <Content Include="flash\music\music.xml" />
+    <Content Include="flash\music\music1.mp3" />
+    <Content Include="flash\taglines\taglines.swf" />
+    <Content Include="flash\taglines\taglines.txt" />
+    <Content Include="flash\themed-image\themed-image.png" />
+    <Content Include="flash\time-date\time-date.swf" />
+    <Content Include="forms.htm" />
+    <Content Include="french_study.htm" />
+    <Content Include="fundraising.htm" />
+    <Content Include="graphics\2_index_r4_c2.jpg" />
+    <Content Include="graphics\3_template_r3_c12.jpg" />
+    <Content Include="graphics\3_template_r3_c8.jpg" />
+    <Content Include="graphics\3_template_r4_c11.jpg" />
+    <Content Include="graphics\arrow.gif" />
+    <Content Include="graphics\arrow.jpg" />
+    <Content Include="graphics\arrow_hover.gif" />
+    <Content Include="graphics\bg_color.jpg" />
+    <Content Include="graphics\bg_content_bottom.gif" />
+    <Content Include="graphics\bg_image.jpg" />
+    <Content Include="graphics\blank.gif" />
+    <Content Include="graphics\bottom.jpg" />
+    <Content Include="graphics\bottom_l.jpg" />
+    <Content Include="graphics\bottom_r.jpg" />
+    <Content Include="graphics\britain.jpg" />
+    <Content Include="graphics\bul_red_arrow.gif" />
+    <Content Include="graphics\button_quick_find.gif" />
+    <Content Include="graphics\c0.jpg" />
+    <Content Include="graphics\c1.jpg" />
+    <Content Include="graphics\c2.jpg" />
+    <Content Include="graphics\c3.jpg" />
+    <Content Include="graphics\c4.jpg" />
+    <Content Include="graphics\c5.jpg" />
+    <Content Include="graphics\c6.jpg" />
+    <Content Include="graphics\c7.jpg" />
+    <Content Include="graphics\c8.jpg" />
+    <Content Include="graphics\cart_icon.jpg" />
+    <Content Include="graphics\contact.png" />
+    <Content Include="graphics\contact_us.png" />
+    <Content Include="graphics\favorites.png" />
+    <Content Include="graphics\german.jpg" />
+    <Content Include="graphics\h1_bg.gif" />
+    <Content Include="graphics\home.png" />
+    <Content Include="graphics\horizontal_line.gif" />
+    <Content Include="graphics\iconLegend_check_included.gif" />
+    <Content Include="graphics\icon_minus.gif" />
+    <Content Include="graphics\icon_plus.gif" />
+    <Content Include="graphics\index_bg.jpg" />
+    <Content Include="graphics\index_content1.jpg" />
+    <Content Include="graphics\index_content2.jpg" />
+    <Content Include="graphics\index_footer.jpg" />
+    <Content Include="graphics\index_header.jpg" />
+    <Content Include="graphics\info.gif" />
+    <Content Include="graphics\menu_bg.gif" />
+    <Content Include="graphics\menu_bg_over.gif" />
+    <Content Include="graphics\menu_bg_right.gif" />
+    <Content Include="graphics\n0.gif" />
+    <Content Include="graphics\n1.gif" />
+    <Content Include="graphics\n2.gif" />
+    <Content Include="graphics\n2.jpg" />
+    <Content Include="graphics\n3.gif" />
+    <Content Include="graphics\n4.gif" />
+    <Content Include="graphics\n5.gif" />
+    <Content Include="graphics\n6.gif" />
+    <Content Include="graphics\n7.gif" />
+    <Content Include="graphics\n8.gif" />
+    <Content Include="graphics\news_bg.gif" />
+    <Content Include="graphics\news_bg.jpg" />
+    <Content Include="graphics\news_bt.gif" />
+    <Content Include="graphics\news_bt.jpg" />
+    <Content Include="graphics\news_tp.gif" />
+    <Content Include="graphics\news_tp.jpg" />
+    <Content Include="graphics\paypalcap.jpg" />
+    <Content Include="graphics\search.gif" />
+    <Content Include="graphics\search_bg.jpg" />
+    <Content Include="graphics\sitemap.png" />
+    <Content Include="graphics\spanish.jpg" />
+    <Content Include="graphics\top.jpg" />
+    <Content Include="graphics\top_l.jpg" />
+    <Content Include="graphics\top_r.jpg" />
+    <Content Include="graphics\valid-html401.png" />
+    <Content Include="graphics\valid-xhtml10.png" />
+    <Content Include="graphics\vertical_menu.gif" />
+    <Content Include="graphics\vertical_menu.jpg" />
+    <Content Include="guidance.htm" />
+    <Content Include="ibCalendar.aspx" />
+    <Content Include="IBcalendar.htm" />
+    <Content Include="index.htm" />
+    <Content Include="ib_alliance.htm" />
+    <Content Include="ib_alliance_news.htm" />
+    <Content Include="images\contact.png" />
+    <Content Include="javascript\AC_Macromedia.js" />
+    <Content Include="javascript\AC_RunActiveContent.js" />
+    <Content Include="javascript\blank.gif" />
+    <Content Include="javascript\faq.js" />
+    <Content Include="javascript\intro_functions.js" />
+    <Content Include="javascript\menu.js" />
+    <Content Include="javascript\pngbehavior.htc" />
+    <Content Include="javascript\pngfix.js" />
+    <Content Include="javascript\scroller.js" />
+    <Content Include="javascript\special_functions.js" />
+    <Content Include="javascript\swfobject.js" />
+    <Content Include="logo\logo.png" />
+    <Content Include="SHSpage.htm" />
+    <Content Include="spanish_study.htm" />
+    <Content Include="sports_clubs.htm" />
+    <Content Include="styles\compact.css" />
+    <Content Include="styles\fonts.css" />
+    <Content Include="styles\fullscreen.css" />
+    <Content Include="styles\index.css" />
+    <Content Include="styles\menu.css" />
+    <Content Include="styles\stylesheet.css" />
+    <Content Include="Templates\compact.htm" />
+    <Content Include="Templates\fullscreen.htm" />
+    <Content Include="Templates\index.htm" />
+    <Content Include="travel.htm" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPages\AddStudents.aspx.cs">
+      <DependentUpon>AddStudents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\AddStudents.aspx.designer.cs">
+      <DependentUpon>AddStudents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\DirectoryUpdate.aspx.cs">
+      <DependentUpon>DirectoryUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\DirectoryUpdate.aspx.designer.cs">
+      <DependentUpon>DirectoryUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\Homeroom.aspx.cs">
+      <DependentUpon>Homeroom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\Homeroom.aspx.designer.cs">
+      <DependentUpon>Homeroom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\UpdateCalendar.aspx.cs">
+      <DependentUpon>UpdateCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\UpdateCalendar.aspx.designer.cs">
+      <DependentUpon>UpdateCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\ViewCalendar.aspx.cs">
+      <DependentUpon>ViewCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\ViewCalendar.aspx.designer.cs">
+      <DependentUpon>ViewCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IBCalendar.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IBCalendar.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="IBHomeroom.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IBHomeroom.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="IBStudents.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IBStudents.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberPages\Directory.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Directory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberPages\Directory.aspx.designer.cs">
+      <DependentUpon>Directory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ibCalendar.aspx.cs">
+      <DependentUpon>ibCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ibCalendar.aspx.designer.cs">
+      <DependentUpon>ibCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberPages\DirectoryUpdate.aspx.cs">
+      <DependentUpon>DirectoryUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberPages\DirectoryUpdate.aspx.designer.cs">
+      <DependentUpon>DirectoryUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="flash\flash-buttons\button1.fla" />
+    <None Include="flash\flash-buttons\button2.fla" />
+    <None Include="flash\flash-buttons\button3.fla" />
+    <None Include="flash\flash-buttons\flash-buttons.fla" />
+    <None Include="javascript\swfobject.zip" />
+    <None Include="Library\bottom_links.lbi" />
+    <None Include="Library\contact.lbi" />
+    <None Include="Library\favorites.lbi" />
+    <None Include="Library\icons.lbi" />
+    <None Include="Library\info_box.lbi" />
+    <None Include="Library\logo.lbi" />
+    <None Include="Library\site_info.lbi" />
+    <None Include="Library\themed_image.lbi" />
+    <None Include="Library\top_buttons.lbi" />
+    <None Include="Library\vertical_menu.lbi" />
+    <None Include="Templates\compact.dwt" />
+    <None Include="Templates\fullscreen.dwt" />
+    <None Include="Templates\index.dwt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IBStudents.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>IBStudents.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Docs\2008-09_Summer_reading_list.doc" />
+    <None Include="Docs\IB_hoods.doc" />
+    <None Include="Docs\ShadowFactSheet.pdf" />
+    <None Include="IBStudents.dbml.layout">
+      <DependentUpon>IBStudents.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IBHomeroom.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>IBHomeroom.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IBCalendar.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>IBCalendar.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IBHomeroom.dbml.layout">
+      <DependentUpon>IBHomeroom.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ambassador.htm" />
+    <Content Include="Class2009Pictures\photos\2009 National Merit-012000.jpg" />
+    <Content Include="Class2009Pictures\thumbs\2009 National Merit-012000.jpg" />
+    <Content Include="Coordinator.htm" />
+    <Content Include="Copy of college_lab_2009.htm" />
+    <Content Include="Copy of styles\compact.css" />
+    <Content Include="Copy of styles\Copy of menu.css" />
+    <Content Include="Copy of styles\fonts-old.css" />
+    <Content Include="Copy of styles\fonts.css" />
+    <Content Include="Copy of styles\fullscreen.css" />
+    <Content Include="Copy of styles\index.css" />
+    <Content Include="Copy of styles\menu.css" />
+    <Content Include="Copy of styles\style.css" />
+    <Content Include="Copy of styles\stylesheet.css" />
+    <Content Include="Copy of Web.config" />
+    <Content Include="AdminPages\web.config" />
+    <Content Include="App_Data\loginuserpwd.xml" />
+    <None Include="Docs\CAS052907Form.pdf" />
+    <None Include="Docs\CAS_Form_032808_current_bright_futu_052907.pdf" />
+    <None Include="Docs\CAS_STEP_BY_STEP_2009MJB.pdf" />
+    <None Include="Docs\Freshman School Supply List 2009-2010.doc" />
+    <None Include="Docs\MrsLetosListHHS.rtf" />
+    <None Include="Docs\Recruitment Fact Sheet 2010-2011.doc" />
+    <None Include="LabDocs\College_Visit_Calendar_0809.doc" />
+    <None Include="LabDocs\College_Visit_Calendar_091409.doc" />
+    <None Include="LabDocs\College_Visit_Calendar_092509.doc" />
+    <None Include="LabDocs\College_Visit_Calendar_100909.doc" />
+    <None Include="LabDocs\HREF 9th and 10th Version 2009.doc" />
+    <None Include="LabDocs\HREF for Senior Version 2009.doc" />
+    <None Include="LabDocs\Issue1_2009.doc" />
+    <None Include="LabDocs\Issue_1_2009.doc" />
+    <None Include="LabDocs\Issue_2_2009.doc" />
+    <None Include="LabDocs\Issue_3_2009.doc" />
+    <None Include="LabDocs\Issue_4_2009.doc" />
+    <None Include="LabDocs\Issue_5_2009.doc" />
+    <None Include="LabDocs\Issue_6_2009.doc" />
+    <None Include="Web.config-prod" />
+    <None Include="Docs\2009-10_Summer_reading_list.pdf" />
+    <None Include="Docs\IBDirectory.doc" />
+    <None Include="Docs\volunteer.doc" />
+    <None Include="IBCalendar.dbml.layout">
+      <DependentUpon>IBCalendar.dbml</DependentUpon>
+    </None>
+    <Content Include="Counselor.htm" />
+    <Content Include="EuroTravelGallery\default.htm" />
+    <Content Include="EuroTravelGallery\DefaultPic.htm" />
+    <Content Include="EuroTravelGallery\library\thumbs.css" />
+    <Content Include="EuroTravelGallery\lightbox\css\lightbox.css" />
+    <Content Include="EuroTravelGallery\lightbox\images\blank.gif" />
+    <Content Include="EuroTravelGallery\lightbox\images\close.gif" />
+    <Content Include="EuroTravelGallery\lightbox\images\closelabel.gif" />
+    <Content Include="EuroTravelGallery\lightbox\images\loading.gif" />
+    <Content Include="EuroTravelGallery\lightbox\images\next.gif" />
+    <Content Include="EuroTravelGallery\lightbox\images\nextlabel.gif" />
+    <Content Include="EuroTravelGallery\lightbox\images\prev.gif" />
+    <Content Include="EuroTravelGallery\lightbox\images\prevlabel.gif" />
+    <Content Include="EuroTravelGallery\lightbox\js\effects.js" />
+    <Content Include="EuroTravelGallery\lightbox\js\lightbox.js" />
+    <Content Include="EuroTravelGallery\lightbox\js\prototype.js" />
+    <Content Include="EuroTravelGallery\lightbox\js\scriptaculous.js" />
+    <Content Include="EuroTravelGallery\photos\10.jpg" />
+    <Content Include="EuroTravelGallery\photos\14.jpg" />
+    <Content Include="EuroTravelGallery\photos\16.jpg" />
+    <Content Include="EuroTravelGallery\photos\17.jpg" />
+    <Content Include="EuroTravelGallery\photos\19.jpg" />
+    <Content Include="EuroTravelGallery\photos\33.jpg" />
+    <Content Include="EuroTravelGallery\photos\35.jpg" />
+    <Content Include="EuroTravelGallery\photos\8.jpg" />
+    <Content Include="EuroTravelGallery\thumbs\10.jpg" />
+    <Content Include="EuroTravelGallery\thumbs\14.jpg" />
+    <Content Include="EuroTravelGallery\thumbs\16.jpg" />
+    <Content Include="EuroTravelGallery\thumbs\17.jpg" />
+    <Content Include="EuroTravelGallery\thumbs\19.jpg" />
+    <Content Include="EuroTravelGallery\thumbs\33.jpg" />
+    <Content Include="EuroTravelGallery\thumbs\35.jpg" />
+    <Content Include="EuroTravelGallery\thumbs\8.jpg" />
+    <Content Include="graphics\ajax_wait.gif" />
+    <Content Include="graphics\graduation-cap-clip-art-8.jpg" />
+    <Content Include="graphics\schoool-grad.png" />
+    <Content Include="images\Corncop2.gif" />
+    <Content Include="images\dot.gif" />
+    <Content Include="graphics\New_icons.gif" />
+    <Content Include="graphics\New_icons_10.gif" />
+    <Content Include="graphics\New_icons_62.gif" />
+    <Content Include="images\Graduation2009.jpg" />
+    <Content Include="includes\news_scroller.htm" />
+    <Content Include="includes\ns.htm" />
+    <Content Include="includes\scroller_include.htm" />
+    <Content Include="lightbox\css\lightbox.css" />
+    <Content Include="lightbox\images\blank.gif" />
+    <Content Include="lightbox\images\close.gif" />
+    <Content Include="lightbox\images\closelabel.gif" />
+    <Content Include="lightbox\images\loading.gif" />
+    <Content Include="lightbox\images\next.gif" />
+    <Content Include="lightbox\images\nextlabel.gif" />
+    <Content Include="lightbox\images\prev.gif" />
+    <Content Include="lightbox\images\prevlabel.gif" />
+    <Content Include="lightbox\js\effects.js" />
+    <Content Include="lightbox\js\lightbox.js" />
+    <Content Include="lightbox\js\prototype.js" />
+    <Content Include="lightbox\js\scriptaculous.js" />
+    <Content Include="logo\cloud.JPG" />
+    <Content Include="logo\HHS-logo.JPG" />
+    <Content Include="images\paw.gif" />
+    <Content Include="logo\hhs-logo2.JPG" />
+    <Content Include="logo\hhs-logo3.JPG" />
+    <Content Include="MemberPages\DirectoryUpdate.aspx" />
+    <Content Include="MemberPages\web.config" />
+    <Content Include="MrGast_Gallery\default-old.htm" />
+    <Content Include="MrGast_Gallery\default.htm" />
+    <Content Include="MrGast_Gallery\default1-old.htm" />
+    <Content Include="MrGast_Gallery\default1.htm" />
+    <Content Include="MrGast_Gallery\default2-old.htm" />
+    <Content Include="MrGast_Gallery\default2.htm" />
+    <Content Include="MrGast_Gallery\library\thumbs.css" />
+    <Content Include="MrGast_Gallery\lightbox\css\lightbox.css" />
+    <Content Include="MrGast_Gallery\lightbox\images\blank.gif" />
+    <Content Include="MrGast_Gallery\lightbox\images\close.gif" />
+    <Content Include="MrGast_Gallery\lightbox\images\closelabel.gif" />
+    <Content Include="MrGast_Gallery\lightbox\images\loading.gif" />
+    <Content Include="MrGast_Gallery\lightbox\images\next.gif" />
+    <Content Include="MrGast_Gallery\lightbox\images\nextlabel.gif" />
+    <Content Include="MrGast_Gallery\lightbox\images\prev.gif" />
+    <Content Include="MrGast_Gallery\lightbox\images\prevlabel.gif" />
+    <Content Include="MrGast_Gallery\lightbox\js\effects.js" />
+    <Content Include="MrGast_Gallery\lightbox\js\lightbox.js" />
+    <Content Include="MrGast_Gallery\lightbox\js\prototype.js" />
+    <Content Include="MrGast_Gallery\lightbox\js\scriptaculous.js" />
+    <Content Include="MrGast_Gallery\photos\Berlin Train Station.jpg" />
+    <Content Include="MrGast_Gallery\photos\Brandenburg Gate, Berlin.jpg" />
+    <Content Include="MrGast_Gallery\photos\Bridge over the Danube River.jpg" />
+    <Content Include="MrGast_Gallery\photos\Broadway in London.jpg" />
+    <Content Include="MrGast_Gallery\photos\Buda on the left, Pest on the right.jpg" />
+    <Content Include="MrGast_Gallery\photos\BudaPest Parliament Building on the Danube River.jpg" />
+    <Content Include="MrGast_Gallery\photos\Checkpoint Charlie, Berlin.jpg" />
+    <Content Include="MrGast_Gallery\photos\Coluseum, Rome.jpg" />
+    <Content Include="MrGast_Gallery\photos\Crossing the Alps, Switzerland.jpg" />
+    <Content Include="MrGast_Gallery\photos\Danube River Cruise at night.jpg" />
+    <Content Include="MrGast_Gallery\photos\Dinner in Vienna.jpg" />
+    <Content Include="MrGast_Gallery\photos\Eiffel at mid-day, Paris.jpg" />
+    <Content Include="MrGast_Gallery\photos\Eiffel at night %28view from Mont Martre%29.jpg" />
+    <Content Include="MrGast_Gallery\photos\Eiffel at sunset, Paris.jpg" />
+    <Content Include="MrGast_Gallery\photos\Eiffel in Blue lights, Bastille Day.jpg" />
+    <Content Include="MrGast_Gallery\photos\Ferris Wheel along the Tuileries, Paris.jpg" />
+    <Content Include="MrGast_Gallery\photos\Gardens at Versailles.jpg" />
+    <Content Include="MrGast_Gallery\photos\HHS Gang in front of Schonbrunn.jpg" />
+    <Content Include="MrGast_Gallery\photos\HHS Gang in front of the Louvre Glass Pyramid, Paris.jpg" />
+    <Content Include="MrGast_Gallery\photos\HHS Gang with our driver, Paul--Berlin.jpg" />
+    <Content Include="MrGast_Gallery\photos\HHS Gang, Paris.jpg" />
+    <Content Include="MrGast_Gallery\photos\Horse Statue outside the Musee dOrsay, Paris.jpg" />
+    <Content Include="MrGast_Gallery\photos\Interior Dome of Santa Maria del Fiore, Florence.jpg" />
+    <Content Include="MrGast_Gallery\photos\Just in case you forget where you are.jpg" />
+    <Content Include="MrGast_Gallery\photos\London and the Thames.jpg" />
+    <Content Include="MrGast_Gallery\photos\London Bridge.jpg" />
+    <Content Include="MrGast_Gallery\photos\Lucerne, Switzerland %28view from the watch tower%29.jpg" />
+    <Content Include="MrGast_Gallery\photos\Lucerne, Switzerland %28View from watch tower%29.jpg" />
+    <Content Include="MrGast_Gallery\photos\Matthias Cathedral, BudaPest.jpg" />
+    <Content Include="MrGast_Gallery\photos\Memorial to the brave and virtuous Swiss.jpg" />
+    <Content Include="MrGast_Gallery\photos\Mrs. Rizzo in front of Schonbrunn.jpg" />
+    <Content Include="MrGast_Gallery\photos\Night view from Eiffel.jpg" />
+    <Content Include="MrGast_Gallery\photos\Notre Dame Cathedral at Night.jpg" />
+    <Content Include="MrGast_Gallery\photos\Notre Dame Cathedral, Paris.jpg" />
+    <Content Include="MrGast_Gallery\photos\Paris and the Seine River as viewed from Eiffel.jpg" />
+    <Content Include="MrGast_Gallery\photos\Parliament, Big Ben, and the London Eye.jpg" />
+    <Content Include="MrGast_Gallery\photos\Prague and the Vltava River.jpg" />
+    <Content Include="MrGast_Gallery\photos\Reichstag Building, Berlin.jpg" />
+    <Content Include="MrGast_Gallery\photos\Santa Maria del Fiore, Florence.jpg" />
+    <Content Include="MrGast_Gallery\photos\St. Stephen Cathedral, Vienna.jpg" />
+    <Content Include="MrGast_Gallery\photos\Stained Glass from Matthias Cathedral, BudaPest.jpg" />
+    <Content Include="MrGast_Gallery\photos\Stained Glass from Notre Dame.jpg" />
+    <Content Include="MrGast_Gallery\photos\Stained glass, Notre Dame Cathedral.jpg" />
+    <Content Include="MrGast_Gallery\photos\Stained Glass, Notre Dame.jpg" />
+    <Content Include="MrGast_Gallery\photos\Vatican, Rome.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Berlin Train Station.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Brandenburg Gate, Berlin.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Bridge over the Danube River.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Broadway in London.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Buda on the left, Pest on the right.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\BudaPest Parliament Building on the Danube River.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Checkpoint Charlie, Berlin.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Coluseum, Rome.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Crossing the Alps, Switzerland.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Danube River Cruise at night.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Dinner in Vienna.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Eiffel at mid-day, Paris.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Eiffel at night %28view from Mont Martre%29.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Eiffel at sunset, Paris.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Eiffel in Blue lights, Bastille Day.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Ferris Wheel along the Tuileries, Paris.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Gardens at Versailles.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\HHS Gang in front of Schonbrunn.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\HHS Gang in front of the Louvre Glass Pyramid, Paris.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\HHS Gang with our driver, Paul--Berlin.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\HHS Gang, Paris.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Horse Statue outside the Musee dOrsay, Paris.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Interior Dome of Santa Maria del Fiore, Florence.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Just in case you forget where you are.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\London and the Thames.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\London Bridge.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Lucerne, Switzerland %28view from the watch tower%29.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Lucerne, Switzerland %28View from watch tower%29.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Matthias Cathedral, BudaPest.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Memorial to the brave and virtuous Swiss.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Mrs. Rizzo in front of Schonbrunn.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Night view from Eiffel.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Notre Dame Cathedral at Night.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Notre Dame Cathedral, Paris.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Paris and the Seine River as viewed from Eiffel.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Parliament, Big Ben, and the London Eye.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Prague and the Vltava River.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Reichstag Building, Berlin.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Santa Maria del Fiore, Florence.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\St. Stephen Cathedral, Vienna.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Stained Glass from Matthias Cathedral, BudaPest.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Stained Glass from Notre Dame.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Stained glass, Notre Dame Cathedral.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Stained Glass, Notre Dame.jpg" />
+    <Content Include="MrGast_Gallery\thumbs\Vatican, Rome.jpg" />
+    <Content Include="SchoolGallery\default.htm" />
+    <Content Include="SchoolGallery\library\thumbs.css" />
+    <Content Include="SchoolGallery\lightbox\css\lightbox.css" />
+    <Content Include="SchoolGallery\lightbox\images\blank.gif" />
+    <Content Include="SchoolGallery\lightbox\images\close.gif" />
+    <Content Include="SchoolGallery\lightbox\images\closelabel.gif" />
+    <Content Include="SchoolGallery\lightbox\images\loading.gif" />
+    <Content Include="SchoolGallery\lightbox\images\next.gif" />
+    <Content Include="SchoolGallery\lightbox\images\nextlabel.gif" />
+    <Content Include="SchoolGallery\lightbox\images\prev.gif" />
+    <Content Include="SchoolGallery\lightbox\images\prevlabel.gif" />
+    <Content Include="SchoolGallery\lightbox\js\effects.js" />
+    <Content Include="SchoolGallery\lightbox\js\lightbox.js" />
+    <Content Include="SchoolGallery\lightbox\js\prototype.js" />
+    <Content Include="SchoolGallery\lightbox\js\scriptaculous.js" />
+    <Content Include="SchoolGallery\photos\Pic1.jpg" />
+    <Content Include="SchoolGallery\photos\Pic10.jpg" />
+    <Content Include="SchoolGallery\photos\Pic11.jpg" />
+    <Content Include="SchoolGallery\photos\Pic12.jpg" />
+    <Content Include="SchoolGallery\photos\Pic13.jpg" />
+    <Content Include="SchoolGallery\photos\Pic14.jpg" />
+    <Content Include="SchoolGallery\photos\Pic15.jpg" />
+    <Content Include="SchoolGallery\photos\Pic16.jpg" />
+    <Content Include="SchoolGallery\photos\Pic17.jpg" />
+    <Content Include="SchoolGallery\photos\Pic18.jpg" />
+    <Content Include="SchoolGallery\photos\Pic2.jpg" />
+    <Content Include="SchoolGallery\photos\Pic20.jpg" />
+    <Content Include="SchoolGallery\photos\Pic21.jpg" />
+    <Content Include="SchoolGallery\photos\Pic22.jpg" />
+    <Content Include="SchoolGallery\photos\Pic23.jpg" />
+    <Content Include="SchoolGallery\photos\Pic24.jpg" />
+    <Content Include="SchoolGallery\photos\Pic3.jpg" />
+    <Content Include="SchoolGallery\photos\Pic4.jpg" />
+    <Content Include="SchoolGallery\photos\Pic5.jpg" />
+    <Content Include="SchoolGallery\photos\Pic6.jpg" />
+    <Content Include="SchoolGallery\photos\Pic7.jpg" />
+    <Content Include="SchoolGallery\photos\Pic8.jpg" />
+    <Content Include="SchoolGallery\photos\Pic9.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic1.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic10.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic11.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic12.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic13.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic14.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic15.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic16.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic17.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic18.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic2.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic20.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic21.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic22.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic23.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic24.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic3.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic4.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic5.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic6.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic7.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic8.jpg" />
+    <Content Include="SchoolGallery\thumbs\Pic9.jpg" />
+    <Content Include="styles\Copy of index.css" />
+    <Content Include="styles\Copy of menu.css" />
+    <Content Include="styles\fonts-old.css" />
+    <Content Include="styles\style.css" />
+    <Content Include="Travel2.htm" />
+    <Content Include="UserLogin.aspx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

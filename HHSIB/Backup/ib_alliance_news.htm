@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- #BeginTemplate "Templates/fullscreen.dwt" --><!-- DW6 -->
+
+<head>
+<!-- #BeginEditable "meta" -->
+<title>IB Alliance News</title>
+<meta name="Keywords" content="place your keywords here" />
+<meta name="Description" content="place a description for your webpage here" />
+<!-- #EndEditable -->
+
+<meta name="language" content="en-US" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Links to Style Sheets Begin-->
+<link href="styles/fullscreen.css" rel="stylesheet" type="text/css" />
+<link href="styles/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="styles/menu.css" rel="stylesheet" type="text/css" />
+<link href="styles/fonts.css" rel="stylesheet" type="text/css" />
+<!-- Links to Style Sheets End-->
+
+<!-- Links to Javascript files Begin-->
+<script type="text/javascript" src="javascript/swfobject.js"></script>
+<script type="text/javascript" src="javascript/special_functions.js" ></script>
+<script type="text/javascript" src="javascript/faq.js" ></script>
+<script type="text/javascript" src="javascript/menu.js"></script>
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="../javascript/faq.js"></script>
+<![endif]-->
+<!-- Links to Javascript files End-->
+
+<!-- #BeginEditable "flash_variables" -->
+<script type="text/javascript">
+// if this page is in:
+//   the root folder, then set this variable to ./
+//   a sub folder one level deep, then set this variable to ../
+//   a sub folder two levels deep, then set this variable to ../../
+var rootFlashLocation = "./";
+var music_on           = 1; // 0 = off, 1 = on
+var clock24hour        = 1; // 0 = 12 hour clock, 1 = 24 hour clock
+var maxIntroViews      = -1; // -1 = always display, 0 = never display, and any other positive integer = the number of times to display the intro sequence
+var isPersistantCookie = 0; // 0 =  no, 1 = yes -- persistant means it will save even after the user closes their browser
+</script>
+<!-- #EndEditable -->
+
+</head>
+
+<body>
+
+<!--main-->
+	<div id="main">
+	
+<!--top-->
+	<div class="top">
+		<div class="top_r">
+			<div class="top_l">
+			
+<!--header-->
+	<div class="header">
+	
+	<!--flash header-->
+	<div id="template_flash" style="left: 133px; top: 100px">
+		<div id="flashcode"></div></div>
+		<script type="text/javascript"> 
+		var so = new SWFObject(rootFlashLocation + "flash/flash-images/template-images.swf", "flashcode", "200", "100", "6");
+		so.addParam("wmode", "transparent");
+		so.addParam("base", rootFlashLocation);
+		so.addVariable("music_on", music_on);
+		so.addVariable("clock24hour", clock24hour);
+		so.write("flashcode");
+		</script>
+		
+<!--page title-->
+	<div id="page_title" style="left: 225px; top: 5px">
+		<!-- #BeginEditable "page_title" --><h1>Alliance News</h1><!-- #EndEditable --></div>
+
+<!--icons-->
+	<div id="icons" style="left: 140px; top: 247px; position:absolute"><!-- #BeginLibraryItem "/Library/icons.lbi" --><table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+<img src="graphics/home.png" width="20" height="20" alt="home" /><a href="index.htm">Home</a>
+<img src="graphics/contact.png" width="20" height="20" alt="contact" /><a href="contact.htm">Contact</a>
+<!--img src="graphics/sitemap.png" width="20" height="20" alt="sitemap" /><a href="sitemap.htm">Search</a--></td>
+	</tr>
+</table><!-- #EndLibraryItem --></div>
+<div id="search" style="left: 400px; top: 245px" class="body1"><h1>IB Alliance News</h1></div>
+
+<!--top button-->
+	<div id="top_buttons_w"  style="right:185px; top: 207px; position:absolute">
+	
+	<!-- #BeginLibraryItem "/Library/top_buttons.lbi" -->
+	<div class="chromestyle" id="chromemenu">
+        <ul>         
+        <li><a href="class_news.htm">News</a></li>       
+        <li><a href="" rel="dropmenu1">Class News</a></li>
+        <li><a href="college_lab.htm">College Lab</a></li>
+        <li><a href="" rel="dropmenu3">IB Office</a></li> 
+        <li><a href="" rel="dropmenu5">Calendar</a></li>        
+        <li><a href="" rel="dropmenu4">CAS Info</a></li>
+        </ul>
+    </div>
+    
+    
+    <!--1st drop down menu -->                                                   
+    <div id="dropmenu1" class="dropmenudiv" style="width: 90px";>    
+    <a href="class_news_2009.htm">2009</a>
+    <a href="class_news_2010.htm">2010</a>
+    <a href="class_news_2011.htm">2011</a>
+    <a href="class_news_2012.htm">2012</a>
+    <a href="class_news_2013.htm">2013</a>
+    </div>
+
+    
+
+
+    <!--3rd drop down menu -->                                                   
+    <div id="dropmenu3" class="dropmenudiv" style="width: 100px;">
+    <a href="Coordinator.htm">Coordinator</a>
+    <a href="Counselor.htm">Counselor</a>
+    </div>
+    
+    <!--4th drop down menu -->                                                
+    <div id="dropmenu4" class="dropmenudiv" style="width: 105px;">
+    <a href="CAS.htm#0">CAS Document</a>
+    <a href="CAS.htm#1">What is CAS ?</a>
+    <a href="CAS.htm#2">CAS Guidelines</a>
+    <a href="CAS.htm#3">Nature of CAS</a>
+    <a href="CAS.htm#4">Questions</a>
+    <a href="CAS.htm#5">Organization</a>
+    <a href="CAS.htm#6">Examples</a>
+    </div>
+    
+    <!--5th drop down menu -->                                                
+    <div id="dropmenu5" class="dropmenudiv" style="width: 80px;">
+    <a href="ibCalendar.aspx">HHS IB</a>
+    <a href="http://hillsborough.mysdhc.org/18F676FF-00757E5A?object=/hillsborough_calendar&templates=RWD&ConfPosition=0&Calendar=1&infobar=no">HHS</a>
+    <a href="http://www.sdhc.k12.fl.us/info/calendars/">District</a>    
+    </div>
+
+    <script type="text/javascript">
+
+        cssdropdown.startchrome("chromemenu")
+    </script>
+    <!-- #EndLibraryItem -->
+    </div>
+<!-- end top button -->
+<!--logo-->
+	<div id="logo" style="left: 275px; top: 20px"><!-- #BeginLibraryItem "/Library/logo.lbi" -->
+	<div>
+        <img src="logo/logo.png" width="400" height="94" alt="logo" />
+    </div><!-- #EndLibraryItem -->
+    </div>
+<!--end logo -->
+
+	</div>
+	</div>
+	</div>
+	</div>	
+	
+<!--center-->
+	<div class="center">
+	<div class="c2">
+	<div class="c6">
+	<div class="c4">
+	<div class="c8">
+	<div class="c5">
+	<div class="c7">
+	<div class="c3">
+	<div class="c1">
+	
+<!--content tables-->
+	<table class="content">
+		<tr><td scope="col" class="c_l">&nbsp;</td>
+			<td scope="col" class="c_menu">
+
+	        <!-- #BeginEditable "body2" -->		
+    <div class="body2">
+    
+    <!--themed image-->
+	<div id="themed_image">
+		<div id="themed_image2"><!-- #BeginLibraryItem "/Library/themed_image.lbi" -->
+		<img border="0" src="flash/themed-image/themed-image.png" width="160" height="100" alt="themed image" /><!-- #EndLibraryItem --></div>
+	</div>
+
+    
+	<!--copy for left menu goes here-->
+
+    <!--menu--><!-- #BeginLibraryItem "/Library/vertical_menu.lbi" --> 
+    <div class="Vertical_Menu">
+	    <ul class="myVerticalMenu">
+	        <li><a href="ib_alliance_news.htm">IB Alliance News</a></li>
+	        <li><a href="fundraising.htm">Fundraising & Shop</a></li>		  
+	        <li><a href="sports_clubs.htm">Sports & Clubs</a></li>	           	        	        		
+		    <li><a href="faculty.htm">Faculty & Staff</a></li>
+		    <li><a href="departments.htm">Departments</a></li>
+		    <li><a href="travel.htm">Travel Tours</a></li>
+		    <li><a href="about_us.htm">About IB</a></li>
+            <li><a href="ib_alliance.htm">About IB Alliance</a></li>	
+		    <li><a href="Application.htm">About IB Application</a></li>	
+		    <li><a href="forms.htm">Forms & Links</a></li>		                
+            <li><a href="event_pics.htm">Events & Pictures</a></li>	
+            <li><a href="UserLogin.aspx?PARM=ParentPage">Parent Menu</a></li>	
+            <li><a href="UserLogin.aspx?PARM=AdminPage">Admin Menu</a></li>	
+            <li><a href="https://www.edline.net/pages/hills">EDLine</a></li>		
+	    </ul>
+    </div><!-- #EndLibraryItem -->
+
+<!--menu end--><br />
+			
+<!-- #EndEditable --></div>
+
+	</td><td scope="col" class="c_c">&nbsp;</td>
+	<td scope="col" class="body1">
+	
+	
+<!--body-->		
+		
+<!-- #BeginEditable "body1" -->
+
+	
+	<br />
+<!--body1 start-->
+    
+    <table width="100%" border=0 cellpadding="5px 5px 5px 5px" class="body_heading">
+        <tr>
+            <td>
+            <h1>October 2009:</h1>  
+            <h3 style="font-size:12pt; color:Fuchsia; font-family:Garamond; font-weight:bold; text-align:center">THANK YOU & WELCOME</h3>                      
+            First 2 months of school are always busy. We welcome all freshmen parents to HHS IB Alliance! Class of 2011 is officially entered the “IB years” by taking the oath and receiving IB Pin during the Pinning Ceremony on Sep 22nd. Class of 2010 is preparing for College application and selection. By now, kids are settled down with school routines, studying, Clubs and Sport activities.  
+            <br /><br />As usual, we have a strong participation of parent volunteers. At the IB Alliance General Meeting Oct 6th, 2009, a new Board was elected with several new chairs added for different activities. 
+            <br /><br /><b>We would like to <span class="news_text_red">THANK</span> all Parent volunteers last year and <span class="news_text_red">WELCOME</span> the new volunteers this year!</b>
+            <br /><br /><span class="news_text_purple">IB Alliance members 2009-2010.</span>
+            <ul class="headline_text">
+                <li><a href="mailto:rschonw1@tampabay.rr.com">Rita Schonwetter (President)</a></li>
+                <li><a href="mailto:michelelwolf@hotmail.com">Michele Wolf (Co-Vice President)</a></li>
+                <li><a href="mailto:lar4514@earthlink.net">Linda Ravitz (Co-Vice President)</a></li>
+                <li><a href="mailto:dbush4@verizon.net">Debbie Sisson (Treasurer)</a></li>
+                <li><a href="mailto:arontpa@aol.com">Faith Aron (Secretary)</a></li>
+                <li><a href="mailto:crosbykim@yahoo.com">Kim Crosby (Wish List Coordinator)</a></li>
+                <li><a href="mailto:bonnylstephens@earthlink.net">Bonny Stephens (Volunteer Coordinator)</a></li>
+                <li><a href="mailto:thuyn211@gmail.com">Tina Nguyen (Webmaster)</a></li>
+                <li><a href="mailto:patti@tilchin.net">Patti Tilchin (Cyber News Coordinator)</a></li>
+                <li><a href="mailto:bjboyd@tampabay.rr.com">Betty Boyd (IB Pinning Chair Person)</a></li>
+                <li><a href="mailto:rpeckham@tampabay.rr.com">Vickie Peckham (T-shirt Chair Person)</a></li>
+                <li><a href="mailto:dkneeley1117@aol.com">Debbie Neeley (Spagetti Dinner Co-chair)</a></li>
+                <li><a href="mailto:kjswalters@aol.com">Heather Walters (Spagetti Dinner Co-chair)</a></li>
+                <li><a href="mailto:ethl@juno.com">Ethel Pila (Senior Banquet Chair person)</a></li>
+            </ul>
+            If any parent have time and want to participate in certain area, please feel free to contact that Chair person. We still need underclassmen parents to help as backup so that you can continue when senior’s parents “graduate”.  
+            <br /><br />Student Directory Information 2009-2010 have been collected and entered into the online Directory. Parents should have the UserIds and Passwords to access the <a href="UserLogin.aspx?PARM=ParentPage">Parent Menu</a>. If you do not have it, please email our <a href="mailto:hhsibwebmaster@gmail.com">Webmaster</a> here. Also please check out your child information online and let us know if there is any correction needed.
+                  
+            <br /><br />
+            </td>
+         </tr>
+        <tr>
+            <td style="background:url(graphics/news_bg.jpg) repeat-x;"></td>
+        </tr>
+        <tr>
+            <td>
+            <h1>September 2009:</h1>              
+            <h3 style="font-size:12pt; color:Fuchsia; font-family:Garamond; font-weight:bold; text-align:center">Parents Volunteers Invitation</h3>          
+            There are many opportunities to participate in your child’s high school !!! 
+            <br /><br />The IB Alliance is supportive of the students, teachers and staff of the IB program and would appreciate your assistance of time and/or resources.  This involvement could be at any level which you feel comfortable including occasional phone call assistance, committee assistance, program support, website support,and participation on the Alliance Board.
+            <br /><br />We are still in need of filling open positions!
+            <br /><br />Please contact <a href="mailto:rschonw1@tampabay.rr.com">Rita Schonwetter</a> to learn more about our organization. We look forward to being available to answer any questions you may have.
+            <br /><br />Also, please remember to check the website regularly!! 
+                    
+            <br /><br />
+            </td>
+         </tr>
+        <tr>
+            <td style="background:url(graphics/news_bg.jpg) repeat-x;"></td>
+        </tr>
+        <tr>
+            <td>
+            <h1>August 2009:</h1>              
+            <h3 style="font-size:12pt; color:Fuchsia; font-family:Garamond; font-weight:bold; text-align:center">Freshman Parents Meeting Invitation</h3>          
+            On <strong>Tuesday, August 18, 2009</strong> from 6:30-8:00pm, the HHS IB Alliance will hold a Meet and Greet-Question and Answer session at Buchanan Middle School.
+            <br /><br />School personnel, Alliance members and a few seasoned IB students will attend to offer a brief overview of the Alliance and answer any last minute questions parents may have.
+            <br /><br />We look forward to having many freshman parents joining us!           
+            <br /><br />
+            </td>
+         </tr>
+        <tr>
+            <td style="background:url(graphics/news_bg.jpg) repeat-x;"></td>
+        </tr>
+        <tr>
+            <td>
+            <h1>July 2009:</h1>              
+            <h3 style="font-size:12pt; color:Fuchsia; font-family:Garamond; font-weight:bold; text-align:center">Congratulations to Class of 2009 !!!</h3>          
+            92% of the Class of 2009 earned the IB Diploma, the highest rate in HHS history. The Class of 2009 consists of 130 candidates. 
+            <br /><br />We are very proud of you !! Good luck as you continue your academic journey !!
+
+            <br /><br />
+            </td>
+         </tr>
+        <tr>
+            <td style="background:url(graphics/news_bg.jpg) repeat-x;"></td>
+        </tr>
+        
+    </table> 
+    <br /><br /><br />
+	
+
+	
+	<!--body1 end-->	
+	
+<!-- #EndEditable --></td>
+	<td scope="col" class="c_r">&nbsp;</td></tr></table>
+
+<!--end content-->
+
+</div></div></div></div></div></div></div></div></div>
+
+
+<!--bottom-->
+
+<!--footer-->
+<div class="bottom">
+	<div class="bottom_r">
+		<div class="bottom_l">
+		
+		<div class="body3">	<!-- #BeginEditable "body3" -->
+		
+		<div class="footer">
+			
+				<div class="footer_l">
+				
+<!--Start favorites-->
+	<div id="favorites" style="left: 259px; top: 7px"><!-- #BeginLibraryItem "/Library/favorites.lbi" --><div class="favorites_button">
+<a href="javascript:bookmark()">
+<img src="graphics/favorites.png" class="favorites_button" alt="bookmark" width="70" height="80" /></a>
+</div><!-- #EndLibraryItem --></div>
+		
+<!--Start contact-->
+	<div id="contact" style="left: 174px; top: 7px"><!-- #BeginLibraryItem "/Library/contact.lbi" --><a href="mailto:hhsibwebmaster@gmail.com?subject=Message from website">
+<img src="graphics/contact_us.png" class="contact_button" alt="contact us" width="70" height="80" /></a><!-- #EndLibraryItem --></div>
+
+				</div>
+				
+				<div class="footer_r">
+				
+<!--Start site_info-->
+			<div id="site_info"><!-- #BeginLibraryItem "/Library/site_info.lbi" --><table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+Copyright © 2008. IB Alliance, Inc. All Rights Reserved. 
+</td>
+	</tr>
+</table><!-- #EndLibraryItem --></div>
+
+
+				</div>
+				
+			</div>
+		
+		<!-- #EndEditable --></div>
+			
+		</div>
+	</div>
+</div>
+			
+
+
+<!--main end--></div>
+
+</body>
+
+<!-- #EndTemplate --></html>
+

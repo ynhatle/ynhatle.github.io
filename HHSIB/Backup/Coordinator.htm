@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- #BeginTemplate "Templates/fullscreen.dwt" --><!-- DW6 -->
+
+<head>
+<!-- #BeginEditable "meta" -->
+<title>Coordinator</title>
+<meta name="Keywords" content="place your keywords here" />
+<meta name="Description" content="place a description for your webpage here" />
+<!-- #EndEditable -->
+
+<meta name="language" content="en-US" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Links to Style Sheets Begin-->
+<link href="styles/fullscreen.css" rel="stylesheet" type="text/css" />
+<link href="styles/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="styles/menu.css" rel="stylesheet" type="text/css" />
+<link href="styles/fonts.css" rel="stylesheet" type="text/css" />
+<!-- Links to Style Sheets End-->
+
+<!-- Links to Javascript files Begin-->
+<script type="text/javascript" src="javascript/swfobject.js"></script>
+<script type="text/javascript" src="javascript/special_functions.js" ></script>
+<script type="text/javascript" src="javascript/faq.js" ></script>
+<script type="text/javascript" src="javascript/menu.js"></script>
+<script type="text/javascript">
+    //display
+    function showhidediv(divNum) 
+    {
+        divName = 'Div' + divNum;
+        if (document.getElementById(divName) != null) 
+        {
+            if (document.getElementById(divName).style.display = 'none')
+                document.getElementById(divName).style.display = '';
+            else
+                document.getElementById(divName).style.display = 'none';
+        }
+        document.getElementById(divName).focus();        
+    }
+
+</script>
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="../javascript/faq.js"></script>
+<![endif]-->
+<!-- Links to Javascript files End-->
+
+<!-- #BeginEditable "flash_variables" -->
+<script type="text/javascript">
+// if this page is in:
+//   the root folder, then set this variable to ./
+//   a sub folder one level deep, then set this variable to ../
+//   a sub folder two levels deep, then set this variable to ../../
+var rootFlashLocation = "./";
+var music_on           = 1; // 0 = off, 1 = on
+var clock24hour        = 1; // 0 = 12 hour clock, 1 = 24 hour clock
+var maxIntroViews      = -1; // -1 = always display, 0 = never display, and any other positive integer = the number of times to display the intro sequence
+var isPersistantCookie = 0; // 0 =  no, 1 = yes -- persistant means it will save even after the user closes their browser
+</script>
+<!-- #EndEditable -->
+
+</head>
+
+<body>
+
+<!--main-->
+	<div id="main">
+	
+<!--top-->
+	<div class="top">
+		<div class="top_r">
+			<div class="top_l">
+			
+<!--header-->
+	<div class="header">
+	
+	<!--flash header-->
+	<div id="template_flash" style="left: 133px; top: 100px">
+		<div id="flashcode"></div></div>
+		<script type="text/javascript"> 
+		var so = new SWFObject(rootFlashLocation + "flash/flash-images/template-images.swf", "flashcode", "200", "100", "6");
+		so.addParam("wmode", "transparent");
+		so.addParam("base", rootFlashLocation);
+		so.addVariable("music_on", music_on);
+		so.addVariable("clock24hour", clock24hour);
+		so.write("flashcode");
+		</script>
+		
+<!--page title-->
+	<div id="page_title" style="left: 225px; top: 5px">
+		<!-- #BeginEditable "page_title" --><h1>Coordinator </h1><!-- #EndEditable --></div>
+
+<!--icons-->
+	<div id="icons" style="left: 140px; top: 247px; position:absolute"><!-- #BeginLibraryItem "/Library/icons.lbi" --><table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+<img src="graphics/home.png" width="20" height="20" alt="home" /><a href="index.htm">Home</a>
+<img src="graphics/contact.png" width="20" height="20" alt="contact" /><a href="contact.htm">Contact</a>
+<!--img src="graphics/sitemap.png" width="20" height="20" alt="sitemap" /><a href="sitemap.htm">Search</a--></td>
+	</tr>
+</table><!-- #EndLibraryItem --></div>
+
+<div id="search" style="left: 400px; top: 245px" class="body1"><h1>IB Coordinator</h1></div>
+<!--top button-->
+	<div id="top_buttons_w"  style="right:185px; top: 207px; position:absolute">
+	
+	<!-- #BeginLibraryItem "/Library/top_buttons.lbi" -->
+	<div class="chromestyle" id="chromemenu">
+        <ul>         
+        <li><a href="class_news.htm">News</a></li>       
+        <li><a href="" rel="dropmenu1">Class News</a></li>
+        <li><a href="college_lab.htm">College Lab</a></li>
+        <li><a href="" rel="dropmenu3">IB Office</a></li> 
+        <li><a href="" rel="dropmenu5">Calendar</a></li>        
+        <li><a href="" rel="dropmenu4">CAS Info</a></li>
+        </ul>
+    </div>
+    
+    
+    <!--1st drop down menu -->                                                   
+    <div id="dropmenu1" class="dropmenudiv" style="width: 90px";>    
+    <a href="class_news_2009.htm">2009</a>
+    <a href="class_news_2010.htm">2010</a>
+    <a href="class_news_2011.htm">2011</a>
+    <a href="class_news_2012.htm">2012</a>
+    <a href="class_news_2013.htm">2013</a>
+    </div>
+
+    
+
+
+    <!--3rd drop down menu -->                                                   
+    <div id="dropmenu3" class="dropmenudiv" style="width: 100px;">
+    <a href="Coordinator.htm">Coordinator</a>
+    <a href="Counselor.htm">Counselor</a>
+    </div>
+    
+    <!--4th drop down menu -->                                                
+    <div id="dropmenu4" class="dropmenudiv" style="width: 105px;">
+    <a href="CAS.htm#0">CAS Document</a>
+    <a href="CAS.htm#1">What is CAS ?</a>
+    <a href="CAS.htm#2">CAS Guidelines</a>
+    <a href="CAS.htm#3">Nature of CAS</a>
+    <a href="CAS.htm#4">Questions</a>
+    <a href="CAS.htm#5">Organization</a>
+    <a href="CAS.htm#6">Examples</a>
+    </div>
+    
+    <!--5th drop down menu -->                                                
+    <div id="dropmenu5" class="dropmenudiv" style="width: 80px;">
+    <a href="ibCalendar.aspx">HHS IB</a>
+    <a href="http://hillsborough.mysdhc.org/18F676FF-00757E5A?object=/hillsborough_calendar&templates=RWD&ConfPosition=0&Calendar=1&infobar=no">HHS</a>
+    <a href="http://www.sdhc.k12.fl.us/info/calendars/">District</a>    
+    </div>
+
+    <script type="text/javascript">
+
+        cssdropdown.startchrome("chromemenu")
+    </script>
+    <!-- #EndLibraryItem -->
+    </div>
+<!-- end top button -->
+<!--logo-->
+	<div id="logo" style="left: 275px; top: 20px"><!-- #BeginLibraryItem "/Library/logo.lbi" -->
+	<div>
+        <img src="logo/logo.png" width="400" height="94" alt="logo" />
+    </div><!-- #EndLibraryItem -->
+    </div>
+<!--end logo -->
+
+	</div>
+	</div>
+	</div>
+	</div>	
+	
+<!--center-->
+	<div class="center">
+	<div class="c2">
+	<div class="c6">
+	<div class="c4">
+	<div class="c8">
+	<div class="c5">
+	<div class="c7">
+	<div class="c3">
+	<div class="c1">
+	
+<!--content tables-->
+	<table class="content">
+		<tr><td scope="col" class="c_l">&nbsp;</td>
+			<td scope="col" class="c_menu">
+
+	        <!-- #BeginEditable "body2" -->		
+    <div class="body2">
+    
+    <!--themed image-->
+	<div id="themed_image">
+		<div id="themed_image2"><!-- #BeginLibraryItem "/Library/themed_image.lbi" -->
+		<img border="0" src="flash/themed-image/themed-image.png" width="160" height="100" alt="themed image" /><!-- #EndLibraryItem --></div>
+	</div>
+
+    
+	<!--copy for left menu goes here-->
+
+    <!--menu--><!-- #BeginLibraryItem "/Library/vertical_menu.lbi" --> 
+    <div class="Vertical_Menu">
+	    <ul class="myVerticalMenu">
+	        <li><a href="ib_alliance_news.htm">IB Alliance News</a></li>
+	        <li><a href="fundraising.htm">Fundraising & Shop</a></li>		  
+	        <li><a href="sports_clubs.htm">Sports & Clubs</a></li>	           	        	        		
+		    <li><a href="faculty.htm">Faculty & Staff</a></li>
+		    <li><a href="departments.htm">Departments</a></li>
+		    <li><a href="travel.htm">Travel Tours</a></li>
+		    <li><a href="about_us.htm">About IB</a></li>
+            <li><a href="ib_alliance.htm">About IB Alliance</a></li>	
+		    <li><a href="Application.htm">About IB Application</a></li>	
+		    <li><a href="forms.htm">Forms & Links</a></li>		                
+            <li><a href="event_pics.htm">Events & Pictures</a></li>	
+            <li><a href="UserLogin.aspx?PARM=ParentPage">Parent Menu</a></li>	
+            <li><a href="UserLogin.aspx?PARM=AdminPage">Admin Menu</a></li>	
+            <li><a href="https://www.edline.net/pages/hills">EDLine</a></li>		
+	    </ul>
+    </div><!-- #EndLibraryItem -->
+
+			
+<!-- #EndEditable --></div>
+
+	</td><td scope="col" class="c_c">&nbsp;</td>
+	<td scope="col" class="body1">
+	
+	
+<!--body-->		
+	 
+	<div class="body_heading"><h1>From the IB Coordinator</h1></div>	
+	<table width="100%" border="0">
+	   <tr>
+	        <td><span class="body_heading"><h4>School Board policy states "students who withdraw from magnet programs shall return to the regular academic program in the school to which they are assigned by the school board".
+               </h4></span>
+	        <h2>Sep 1st, 2009</h2>
+            <br />We have started the year off on a positive note! It has been a wonderful opening. I have been spent the early days of school reminding the students to get involved in all things Hillsborough. We have wonderful teams, clubs, organizations, you name it. The students who are plugged into an extra-curricular organization do better in IB. Involved students benefit from a larger network of support and learn better how to manage their time.
+            <br /><br />Welcome Back,
+            <br />Mr. Jones
+            <br /><br />
+            Please be reminded of the following dates:
+            <ul>
+                <li><span class="news_text_red">Tuesday, September 22th- 2009 IB Pinning Ceremony</span>
+                <br />- This event is for our <span class="news_text_purple">Junior class and their families</span>. This is a special time for them to be officially "pinned" as IB students. The event starts at 6:30pm.
+                </li>
+                <li><span class="news_text_red">Thursday, September 24th - Fall Conference Night</span>
+                <br />- Starts at 3:30pm and the final conferences begin at 8:15pm. Conferences will be held in 15 minute blocks. 
+                <br />- All conferences will be scheduled through the teacher. The IB office will not be scheduling conferences this year. 
+                <br />- Please email your child's teacher via the school website or EDLine in order to schedule an appointment.
+                </li>
+                <li><span class="news_text_red">Tuesday, October 6, 2009 - Fall IB Parent Meeting</span>
+                <br />- Starts at promptly at 6:30pm and ends promptly at 8:00PM
+                <br />- Meeting covers important information about the upcoming IB year, news from the IB Alliance, and a presentation from Ms Gondek about college applications.
+                <br />- This meeting is <span class="news_text_purple">mandatory for seniors</span> and at least one parent or guardian, but all IB parents should plan to attend this important meeting.
+            </li>
+            </ul> 
+            <br /><br />            
+	        </td>
+	    </tr>	    
+	    <tr>
+            <td style="background:url(graphics/news_bg.jpg) repeat-x;"></td>
+        </tr>
+	   <tr>
+	        <td><h2>Aug 3rd, 2009</h2>
+            <br />The 2009-2010 school year is almost here. Classes start at 7:35am on Tuesday, August 25th! I want to give you a few goals over the last weeks of summer. One, please make sure you are on top of all your summer assignments. Two, please make sure they are no major issues with your schedule. If there is a major issue, please contacts us in the IB office. Finally, make sure you soak up some more rays and enjoy the rest of your summer.
+            <br /><br />The following dates are also important:
+            <ul>
+                <li><span class="news_text_red">Thursday, August 13, 2009 - Terrier Connect - 5PM</span>
+                    <br />This event is a general orientation to Hillsborough and is for freshmen only. The event starts at 5PM</li>
+                <li><span class="news_text_red">Saturday, August 15, 2009 - IB Freshmen Day at the Northdale YMCA - 9AM - NOON</span>
+                    <br />This event is the main orientation for incoming HHS IB freshmen. Please sign up through the YMCA. </li>
+                <li><span class="news_text_red">Tuesday, August 18, 2009 - IB Freshmen Parent Meeting - Buchanan Middle School Cafeteria - 6:30PM</span>
+                    <br />This event is the main freshmen parent orientation and an opportunity to ask questions of the IB Alliance and the IB Coordinator.</li>
+                <li><span class="news_text_red">Thursday, August 20, 2009 - HHS Open House - 5PM</span>
+                    <br />This event is for freshmen students to come and meet their teachers and to walk the halls of HHS!</li>        
+                
+            </ul>            
+            The HHS IB turns 20 this year! It is going to be a great year.
+            <br /><br />Sincerely,            
+            <br /><br />Mr. Jones 
+	        </td>
+	    </tr>	    
+	    <tr>
+            <td style="background:url(graphics/news_bg.jpg) repeat-x;"></td>
+        </tr>        
+	     
+	</table>
+		
+	<br /><br /><br />	
+	<!--body1 end-->	
+	
+<!-- #EndEditable -->
+
+</td>
+	<td scope="col" class="c_r">&nbsp;</td></tr></table>
+
+<!--end content-->
+
+</div></div></div></div></div></div></div></div></div>
+
+
+<!--bottom-->
+
+<!--footer-->
+<div class="bottom">
+	<div class="bottom_r">
+		<div class="bottom_l">
+		
+		<div class="body3">	<!-- #BeginEditable "body3" -->
+		
+		<div class="footer">
+			
+				<div class="footer_l">
+				
+<!--Start favorites-->
+	<div id="favorites" style="left: 259px; top: 7px"><!-- #BeginLibraryItem "/Library/favorites.lbi" --><div class="favorites_button">
+<a href="javascript:bookmark()">
+<img src="graphics/favorites.png" class="favorites_button" alt="bookmark" width="70" height="80" /></a>
+</div><!-- #EndLibraryItem --></div>
+		
+<!--Start contact-->
+	<div id="contact" style="left: 174px; top: 7px"><!-- #BeginLibraryItem "/Library/contact.lbi" --><a href="mailto:hhsibwebmaster@gmail.com?subject=Message from website">
+<img src="graphics/contact_us.png" class="contact_button" alt="contact us" width="70" height="80" /></a><!-- #EndLibraryItem --></div>
+
+				</div>
+				
+				<div class="footer_r">
+				
+<!--Start site_info-->
+			<div id="site_info"><!-- #BeginLibraryItem "/Library/site_info.lbi" --><table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+Copyright © 2008. IB Alliance, Inc. All Rights Reserved. 
+</td>
+	</tr>
+</table><!-- #EndLibraryItem --></div>
+
+
+				</div>
+				
+			</div>
+		
+		<!-- #EndEditable --></div>
+			
+		</div>
+	</div>
+</div>
+			
+
+
+<!--main end--></div>
+
+</body>
+
+<!-- #EndTemplate --></html>�� n MT Cond

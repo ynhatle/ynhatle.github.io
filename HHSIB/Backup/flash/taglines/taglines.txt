@@ -1,0 +1,21 @@
+&heading1=Challenging&
+
+&tagline1=Ask challenging questions&
+
+
+
+&heading2=Identifying&
+
+&tagline2=A sense of yourself and your culture&
+
+
+
+&heading3=Learning&
+
+&tagline3=Learn how to learn&
+
+
+
+&heading4=Developing&
+
+&tagline4=Ability to communicate with other countries and cultures&
